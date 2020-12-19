@@ -6,11 +6,13 @@
 </div>
 
 <div class="container">
+<% if user_signed_in? %>
 <div class="nav__btn">
-<%= link_to '新規会員登録', "#", class: "subtitle" %>
+こんにちは、
+<%= link_to current_user.name + "さん", "#", class: "subtitle" %>
 </div>
 <div class="nav__btn">
-<%= link_to 'ログイン', "#", class: "subtitle" %>
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
 </div>
 <div class="nav__btn">
 <%= link_to '連絡帳', "#", class: "subtitle" %>
@@ -18,6 +20,15 @@
 <div class="nav__btn">
 <%= link_to 'お知らせを見る', "#", class: "subtitle" %>
 </div>
+<% else %>
+<div class="nav__btn">
+<%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
+</div>
+<div class="nav__btn">
+<%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
+</div>
+<% end %>
+
 <br><br>
 
 </div>
@@ -74,4 +85,26 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+</div>
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
 </div>
