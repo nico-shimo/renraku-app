@@ -1,4 +1,11 @@
 class AttendancesController < ApplicationController
+
+  def index
+    @attendances = Attendance.includes(:user).order("created_at DESC")
+    query = "SELECT * FROM attendances"
+    @attendances = Attendance.find_by_sql(query)
+  end
+ 
   def new
     @attendance = Attendance.new
   end
