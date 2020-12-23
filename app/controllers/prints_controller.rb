@@ -3,6 +3,17 @@ class PrintsController < ApplicationController
   end
 
   def new
+    @print = Print.new
+  end
+
+  def create
+    @print = Print.new(print_params)
+    if @print.valid?
+      @print.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   private
