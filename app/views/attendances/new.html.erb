@@ -1,0 +1,40 @@
+<div class="header">
+  <div class="inner">
+    <h1>連絡帳App</h1>
+  </div>
+</div>
+
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">出欠フォーム</h2>
+        <%# 部分テンプレートでフォームを表示する %>
+        <%= form_with(model: @attendance, local: true) do |f| %>
+
+          <div class="field">
+            <%= f.label :title, "出欠" %><br />
+            <%= f.collection_select(:presence_id, Presence.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+          </div>
+
+          <div class="field">
+            <%= f.label :title, "朝食" %><br />
+            <%= f.collection_select(:breakfast_id, Breakfast.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+          </div>
+
+          <div class="field">
+            <%= f.label :title, "お風呂" %><br />
+            <%= f.collection_select(:bath_id, Bath.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+          </div>
+
+          <div class="field">
+            <%= f.label :title, "体温" %><br />
+            <%= f.collection_select(:temperture_id, Temperture.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "保存する", class: :form__btn  %>
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>

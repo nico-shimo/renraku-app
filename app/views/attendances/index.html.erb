@@ -1,0 +1,7 @@
+<% @attendances.each do |attendance| %>
+  <p><%= attendance.user.name %>
+  <%= attendance.presence.name %>
+  <%= attendance.bath.name %>
+  <%= attendance.breakfast.name %>
+  <%= attendance.temperture.name %></p>
+<% end %>

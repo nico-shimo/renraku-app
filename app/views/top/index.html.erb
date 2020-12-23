@@ -15,10 +15,16 @@
 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
 </div>
 <div class="nav__btn">
-<%= link_to '連絡帳', "#", class: "subtitle" %>
+<%= link_to '連絡帳', new_attendance_path, class: "subtitle" %>
 </div>
 <div class="nav__btn">
 <%= link_to 'お知らせを見る', "#", class: "subtitle" %>
+</div>
+<div class="nav__btn">
+<%= link_to '出欠一覧を見る', attendances_path, class: "subtitle" %>
+</div>
+<div class="nav__btn">
+<%= link_to 'お知らせを投稿する', new_print_path, class: "subtitle" %>
 </div>
 <% else %>
 <div class="nav__btn">
