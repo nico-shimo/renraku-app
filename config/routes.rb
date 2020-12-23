@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'top/index'
   root to: "top#index"
   resources :attendances, only: [:index, :new, :create]
+  resources :prints, only: [:index, :new]
 end
