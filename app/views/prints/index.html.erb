@@ -1,6 +1,8 @@
 <% @prints.each do |print| %>
   <p><%= print.title %>
   <%= print.text %>
-  <%= print.image %>
+  <% if print.image.attached? %>
+  <%= image_tag print.image.variant(resize: '500x500') %>
+  <% end %>
   </p>
 <% end %>
