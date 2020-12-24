@@ -1,9 +1,11 @@
 <div class="header">
   <div class="inner">
-    <h1>連絡帳App</h1>
+  <%= image_tag "alyssa-stevenson-slpibXIhizI-unsplash.jpg", class:"header-icon" %>
+    <h1>レン"ラク"!</h1>
   </div>
-  
 </div>
+
+
 
 <div class="container">
 <% if user_signed_in? %>
@@ -18,7 +20,7 @@
 <%= link_to '連絡帳', new_attendance_path, class: "subtitle" %>
 </div>
 <div class="nav__btn">
-<%= link_to 'お知らせを見る', "#", class: "subtitle" %>
+<%= link_to 'お知らせを見る', prints_path, class: "subtitle" %>
 </div>
 <div class="nav__btn">
 <%= link_to '出欠一覧を見る', attendances_path, class: "subtitle" %>

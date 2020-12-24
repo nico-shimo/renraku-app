@@ -1,5 +1,7 @@
 class PrintsController < ApplicationController
+
   def index
+    @prints = Print.includes(:user)
   end
 
   def new
@@ -8,8 +10,7 @@ class PrintsController < ApplicationController
 
   def create
     @print = Print.new(print_params)
-    if @print.valid?
-      @print.save
+    if @print.save
       redirect_to root_path
     else
       render :new
