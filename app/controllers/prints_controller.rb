@@ -1,7 +1,7 @@
 class PrintsController < ApplicationController
 
   def index
-    @prints = Print.includes(:user)
+    @prints = Print.includes(:user).order("created_at DESC")
   end
 
   def new

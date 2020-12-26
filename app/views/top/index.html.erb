@@ -1,118 +1,107 @@
 <div class="header">
   <div class="inner">
-  <%= image_tag "alyssa-stevenson-slpibXIhizI-unsplash.jpg", class:"header-icon" %>
-    <h1>レン"ラク"!</h1>
+  <%= image_tag "alyssa-stevenson-slpibXIhizI-unsplash.jpg", class:"header-icon" %><br></br>
+    <div class="title">
+    <h1 class="wf-mplus1p">連絡帳アプリ　レン"ラク"!</h1>
+    </div>
   </div>
-</div>
 
+  <div class="container">
+  <% if user_signed_in? %>
+    <div class="nav__btn">
+      こんにちは、
+    <%= link_to current_user.name + "さん", "#", class: "subtitle" %>
+    </div>
+    <div class="nav__btn">
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
+    </div>
+  <% else %>
+    <div class="nav__btn">
+    <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
+    </div>
+    <div class="nav__btn">
+    <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
+    </div>
+  <% end %>
+  </div>
 
-
-<div class="container">
-<% if user_signed_in? %>
-<div class="nav__btn">
-こんにちは、
-<%= link_to current_user.name + "さん", "#", class: "subtitle" %>
-</div>
-<div class="nav__btn">
-<%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
-</div>
-<div class="nav__btn">
-<%= link_to '連絡帳', new_attendance_path, class: "subtitle" %>
-</div>
-<div class="nav__btn">
-<%= link_to 'お知らせを見る', prints_path, class: "subtitle" %>
-</div>
-<div class="nav__btn">
-<%= link_to '出欠一覧を見る', attendances_path, class: "subtitle" %>
-</div>
-<div class="nav__btn">
-<%= link_to 'お知らせを投稿する', new_print_path, class: "subtitle" %>
-</div>
-<% else %>
-<div class="nav__btn">
-<%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
-</div>
-<div class="nav__btn">
-<%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
-</div>
-<% end %>
-
-<br><br>
-
-</div>
-
-<div class="inner">
-<div class="alert alert-danger" role="alert">
-  A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-</div>
-
-<div class="container">
-
-    <div class="jumbotron mt-5">
-      <div class="d-flex justify-content-center">
-        <div id="js-question" class="alert alert-primary" role="alert">
-          A simple primary alert—check it out!
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="nav__btn">
+        <div class="card" style="width: 18rem;">
+        <img src="https://2.bp.blogspot.com/-4FpV36b5_NY/Vlmd4x-3JGI/AAAAAAAA1Hg/x9VhApI_oDI/s150/christmas_mark14_rabbit.png" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">お知らせを見る</h5>
+              <p class="card-text"></p>
+              <a href="../prints", class="btn btn-primary">お知らせ一覧へ</a>
+          </div>
         </div>
       </div>
-
-      <div id="js-items" class="d-flex justify-content-center">
-        <div class="m-2">
-          <button type="button" id="js-btn-1" class="btn btn-primary">Primary</button>
+      <div class="nav__btn">
+        <div class="card" style="width: 18rem;">
+        <img src="https://2.bp.blogspot.com/-Dd3EuGWMOys/Vlmd3f4PM6I/AAAAAAAA1HI/nPfo227Qxbo/s150/christmas_mark10_pig.png" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">メッセージを送る</h5>
+              <p class="card-text"></p>
+              <a href="../prints", class="btn btn-primary">メッセージルームへ</a>
+          </div>
         </div>
-        <div class="m-2">
-          <button type="button" id="js-btn-2" class="btn btn-primary">Primary</button>
-        </div>
-        <div class="m-2">
-          <button type="button" id="js-btn-3" class="btn btn-primary">Primary</button>
-        </div>
-        <div class="m-2">
-          <button type="button" id="js-btn-4" class="btn btn-primary">Primary</button>
+      </div>
+      <div class="nav__btn">
+        <div class="card" style="width: 18rem;">
+        <img src="https://2.bp.blogspot.com/-eijm4v9_9Nk/Vlmd4YhYQWI/AAAAAAAA1HY/3bLT-7zmcZw/s150/christmas_mark12_lion.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">連絡帳を書く</h5>
+            <p class="card-text"></p>
+            <a href="../attendances/new", class="btn btn-primary">連絡帳へ</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="alert alert-warning" role="alert">
-  A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-</div>
-
-  <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<br>
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="nav__btn">
+        <div class="card" style="width: 18rem;">
+        <img src="https://3.bp.blogspot.com/-fh7os1Nyf-M/VlmdzhnCGbI/AAAAAAAA1GM/LPvGPq9xfEY/s150/christmas_mark01_santa.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">お知らせを投稿する</h5>
+            <p class="card-text"></p>
+            <a href="../prints/new", class="btn btn-primary">お知らせ投稿へ</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__btn">
+        <div class="card" style="width: 18rem;">
+        <img src="https://3.bp.blogspot.com/-XwDUSEwBNjQ/Vlmd2vjH3gI/AAAAAAAA1G4/P-Qh2Kx8NL8/s150/christmas_mark08_cat.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">メッセージを確認する</h5>
+            <p class="card-text"></p>
+            <a href="../prints", class="btn btn-primary">メッセージルームへ</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__btn">
+        <div class="card" style="width: 18rem;">
+        <img src="https://3.bp.blogspot.com/-XmM8F0CZmbs/Vlmd1eEkYsI/AAAAAAAA1Go/ll3rMfNPQV8/s150/christmas_mark05_snowman.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">出欠一覧を見る</h5>
+            <p class="card-text"></p>
+            <a href="../attendances", class="btn btn-primary">出欠一覧へ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-
+<div class ="footer">
+<div class="container">
 <p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+  Copyright RenrakuApp 2020.
 </p>
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-      </div>
-    </div>
-  </div>
 </div>
+</div>
+
