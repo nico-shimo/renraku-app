@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :tweet do
+  factory :print do
     title {Faker::Lorem.word}
     text  {Faker::Lorem.sentence}
     image {Faker::Lorem.sentence}
