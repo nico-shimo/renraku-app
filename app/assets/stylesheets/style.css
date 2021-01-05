@@ -339,6 +339,68 @@ a {
   position: relative;
 }
 
+/* 出欠一覧 */
+.atte-main {
+  background-color: #ffffe0;
+}
+
+.atte-contents {
+  padding: 0 0 0 40px;
+  display: flex;
+  
+}
+
+.atte-name {
+  padding: 3px 5px 0 6px;
+  background-color: #fff799;
+  border: 1px solid #3cb371;
+  width: 70px;
+}
+
+.atte-presence {
+  padding: 3px 5px 0 6px;
+  background-color: #fff799;
+  border: 1px solid #3cb371;
+  width: 50px;
+}
+
+.atte-bath {
+  padding: 3px 5px 0 6px;
+  background-color: #fff799;
+  border: 1px solid #3cb371;
+  width: 120px;
+}
+
+.atte-bf {
+  padding: 3px 5px 0 6px;
+  background-color: #fff799;
+  border: 1px solid #3cb371;
+  width: 160px;
+}
+
+.atte-temper {
+  padding: 3px 5px 0 6px;
+  background-color: #fff799;
+  border: 1px solid #3cb371;
+  width: 100px;
+}
+
+.atte-created {
+  padding: 3px 5px 0 6px;
+  background-color: #fff799;
+  border: 1px solid #3cb371;
+  width: 200px;
+}
+
+table th {/*table内のthに対して*/
+  padding: 10px;/*上下左右10pxずつ*/
+  border: solid 1px black;
+}
+
+table td {/*table内のtdに対して*/
+  padding: 3px 10px;/*上下3pxで左右10px*/
+  border: solid 1px black;
+}
 
 /* タブレット対応 */
 @media (max-width: 1024px) {
