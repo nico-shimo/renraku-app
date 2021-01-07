@@ -5,7 +5,7 @@ class Attendance < ApplicationRecord
   belongs_to :bath
   belongs_to :temperture
 
-  with_options numericality: { message: 'Select' }   do
+  with_options numericality: { message: 'Select' } do
     validates :presence_id
     validates :breakfast_id
     validates :bath_id
