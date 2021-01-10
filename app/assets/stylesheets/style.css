@@ -11,6 +11,7 @@ h1,
 h2,
 p,
 div {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -394,12 +395,12 @@ a {
 
 table th {/*table内のthに対して*/
   padding: 10px;/*上下左右10pxずつ*/
-  border: solid 1px black;
+  border: solid 1px #3cb371;
 }
 
 table td {/*table内のtdに対して*/
   padding: 3px 10px;/*上下3pxで左右10px*/
-  border: solid 1px black;
+  border: solid 1px #3cb371;
 }
 
 /* タブレット対応 */

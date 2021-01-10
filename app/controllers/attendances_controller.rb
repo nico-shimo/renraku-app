@@ -1,4 +1,6 @@
 class AttendancesController < ApplicationController
+  before_action :authenticate_user!
+   
   def index
     @attendances = Attendance.includes(:user).order('created_at DESC')
   end
@@ -22,4 +24,5 @@ class AttendancesController < ApplicationController
   def attendance_params
     params.require(:attendance).permit(:presence_id, :breakfast_id, :bath_id, :temperture_id).merge(user_id: current_user.id)
   end
+
 end
