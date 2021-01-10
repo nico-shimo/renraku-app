@@ -1,52 +1,6 @@
-
 <div class="atte-main">
+<div class="inner">
 <h1 class>出欠一覧</h1>
-<br>
-  <div class="atte-contents">
-    <div class="atte-name">
-    名前
-    </div>
-    <div class="atte-presence">
-    出欠
-    </div>
-    <div class="atte-bath">
-    お風呂
-    </div>
-    <div class="atte-bf">
-    朝ご飯
-    </div>
-    <div class="atte-temper">
-    体温
-    </div>
-    <div class="atte-created">
-    投稿時間</p>
-    </div>
-  </div>
-    
-<% @attendances.each do |attendance| %>
-<div class="atte-contents">
-
-    <div class="atte-name">
-      <p><%= attendance.user.name %>
-    </div>
-    <div class="atte-presence">
-      <%= attendance.presence.name %>
-      </div>
-      <div class="atte-bath">
-      <%= attendance.bath.name %>
-      </div>
-      <div class="atte-bf">
-      <%= attendance.breakfast.name %>
-      </div>
-      <div class="atte-temper">
-      <%= attendance.temperture.name %>
-      </div>
-      <div class="atte-created">
-      <%= l attendance.created_at %></p>
-      </div>
-  </div>
-  <% end %>
-</div>
 <br>
 <div class="atte-main">
 <div class="atte-contents">
@@ -65,5 +19,6 @@
   </tr>
   <% end %>
 </table>
+</div>
 </div>
 </div>
