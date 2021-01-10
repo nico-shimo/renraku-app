@@ -1,4 +1,6 @@
 class PrintsController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @prints = Print.includes(:user).order('created_at DESC')
   end
