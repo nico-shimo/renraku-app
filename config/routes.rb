@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'messages/index'
   post '/top/guest_sign_in', to: 'top#new_guest'
   devise_for :users
   get 'top/index'
