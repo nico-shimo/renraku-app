@@ -70,9 +70,33 @@
 | title   | string     | null:false                     |
 | text    | string     | null:false                     |
 | user    | references | null: false, foreign_key: true |
+| room    | references | null: false, foreign_key: true |
 
 ### Association
 
+- belongs_to :user
+- belongs_to :room
+
+## rooms テーブル
+
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
+
+- has_many :room_users
+- has_many :users, through: room_users
+- has_many :messages
+
+## room_users テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| room   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :room
 - belongs_to :user
 
 ## prints テーブル
@@ -87,6 +111,6 @@
 
 - belongs_to :user
 
-![](https://d.kuku.lu/926fca513b)
+
 
 
