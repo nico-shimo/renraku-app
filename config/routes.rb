@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   resources :attendances, only: [:index, :new, :create]
   resources :prints, only: [:index, :new, :create]
   resources :messages, only: :index 
-  resources :rooms, only: [:new, :create]
+  resources :rooms, only: [:index, :new, :create]
   
 end
