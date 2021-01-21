@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   root to: "top#index"
   resources :attendances, only: [:index, :new, :create]
   resources :prints, only: [:index, :new, :create]
-  resources :messages, only: :index
+  resources :messages, only: :index 
+  resources :rooms, only: [:index, :new, :create]
+  
 end
