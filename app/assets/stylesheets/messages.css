@@ -111,6 +111,7 @@
 .chat-bottom {
   background-color: #DDDDDD;
   height: 90px;
+  width: 100%;
   padding: 20px 40px;
   display: flex;
 }
