@@ -1,6 +1,8 @@
 <div class="side-top">
   <div class="name-box">
-    <a href="#">Tom</a>
+    <a href="#">
+    <%= current_user.name %>
+    </a>
   </div>
   <div class="chat-make">
     <%= link_to "チャットを作成する", new_room_path %>
