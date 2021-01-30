@@ -1,15 +1,13 @@
 <div class="header">
-  <div class="inner">
-    <div class="title">
+  <div class="title">
     <h1 class="wf-mplus1p">連絡帳アプリ　レンラク!</h1>
-    </div>
   </div>
 
-  <div class="container">
-  <div class="nav__btn">
-  <%= link_to 'ゲストログイン（閲覧用）', top_guest_sign_in_path, method: :post %>
-  </div>
-  <% if user_signed_in? %>
+  <div class="login">
+    <div class="nav__btn">
+      <%= link_to 'ゲストログイン（閲覧用）', top_guest_sign_in_path, method: :post %>
+    </div>
+    <% if user_signed_in? %>
     <div class="nav__btn">
       こんにちは、
     <%= link_to current_user.name + "さん", "#", class: "subtitle" %>
@@ -18,16 +16,18 @@
     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
     </div>
     
-  <% else %>
+    <% else %>
     <div class="nav__btn">
     <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
     </div>
     <div class="nav__btn">
     <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
     </div>
-  <% end %>
+    <% end %>
+    </div>
   </div>
-  
+</div>
+
 
   <div class="container">
   <h4>保護者の方はこちら</h4>
@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-<br>
+  <br>
   <div class="container">
   <h4>先生はこちら</h4>
     <div class="d-flex justify-content-center">
@@ -95,16 +95,16 @@
             <h5 class="card-title">出欠一覧を見る</h5>
             <p class="card-text"></p>
             <a href="../attendances", class="btn btn-primary">出欠一覧へ</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class ="footer">
+  <p>
+    Copyright RenrakuApp 2020.
+  </p>
   </div>
-</div>
-<div class ="footer">
-<p>
-  Copyright RenrakuApp 2020.
-</p>
-</div>
 

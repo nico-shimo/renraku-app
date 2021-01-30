@@ -36,8 +36,22 @@ a {
 }
 
 /* ヘッダー */
+.header {
+  background-color: #ffffe0;
+  display: flex;
+  margin-bottom: 48px;
+  padding: 20px 0; 
+}
+
 .title {
   color: #ff8c00;
+  width: 50%;
+  margin-left: 30px;
+}
+
+.login {
+  margin-left: 100px;
+  width: 50%;
 }
 
 .title h1 {
@@ -46,12 +60,6 @@ a {
 
 .wf-mplus1p { 
   font-family: "M PLUS 1p"; 
-}
-
-.header {
-  background-color: #fff799;
-  margin-bottom: 48px;
-  padding: 20px 0;
 }
 
 .header-icon {
@@ -64,6 +72,7 @@ a {
   margin: 0 auto;
   display: flex;
 }
+
 .nav {
   width: 100%;
   display: flex;
@@ -76,16 +85,16 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 1.1em;
-  color: #3cb371;
+  color:  #ff8c00;
   text-decoration: none;
   user-select: none;
-  border: 1px #3cb371 solid;
+  border: 1px  #ff8c00 solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__btn:hover{
-  color: #3cb371;
-  background: #3cb371;
+  color:  #ff8c00;
+  background:  #ff8c00;
 }
 
 .nav__logout{
