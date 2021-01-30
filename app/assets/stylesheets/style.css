@@ -37,21 +37,20 @@ a {
 
 /* ヘッダー */
 .header {
-  background-color: #ffffe0;
+  background-color: white;
   display: flex;
-  margin-bottom: 48px;
   padding: 20px 0; 
 }
 
 .title {
   color: #ff8c00;
-  width: 50%;
+  width: 40%;
   margin-left: 30px;
 }
 
 .login {
   margin-left: 100px;
-  width: 50%;
+  width: 60%;
 }
 
 .title h1 {
@@ -62,25 +61,16 @@ a {
   font-family: "M PLUS 1p"; 
 }
 
-.header-icon {
-  width: 1024px;
-  margin: 0 auto;
-}
-
-.inner {
-  width: 1024px;
-  margin: 0 auto;
-  display: flex;
-}
-
 .nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
   width: 200px;
 }
+
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
@@ -97,19 +87,24 @@ a {
   background:  #ff8c00;
 }
 
-.nav__logout{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #3cb371;
-  text-decoration: none;
-  user-select: none;
-}
-.nav__logout:hover{
-  opacity: 0.5;
+/* トップイメージ周り */
+.first-view {
+  position:relative
 }
 
-/* フォーム周り */
+.text {
+  position: absolute;
+  top: 30%; /*位置を指定します*/
+  left: 70px;
+  color: white;
+}
+
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .form__wrapper{
   min-height: calc(100vh - 161px);
 }
