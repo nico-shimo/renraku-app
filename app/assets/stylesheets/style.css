@@ -39,13 +39,18 @@ a {
 .header {
   background-color: white;
   display: flex;
-  padding: 20px 0; 
+  padding: 20px 0 0; 
 }
 
 .title {
   color: #ff8c00;
   width: 40%;
-  margin-left: 30px;
+  margin-left: 40px;
+}
+
+.title-image {
+  width: 220px;
+  height: 70px;
 }
 
 .login {
@@ -104,6 +109,60 @@ a {
   margin: 0 auto;
   display: flex;
 }
+
+/* ご利用方法 */
+.middle {
+  background-color: #ffffe0;
+  margin-top: 20px;
+  padding: 25px;
+}
+
+.middle-title {
+  text-align: center;
+  border-bottom:  1px solid #ff8c00;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.middle-title h2 {
+  color: black;
+  font-size: 30px;
+}
+
+.middle-body {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 10px;
+}
+
+.middle-image {
+  width: 500px;
+  height: 400px;
+}
+
+.middle-text {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.middle-right-box {
+  display: block;
+}
+.middle-sentence {
+  text-align: center;
+}
+
+.middle-sentence h4 {
+  font-size: 27px;
+}
+
+.middle-new-path {
+  color: #ff8c00;
+  border-bottom:  1px solid #ff8c00;
+}
+
+/* ↑以上middle部分 */
+
 
 .form__wrapper{
   min-height: calc(100vh - 161px);
