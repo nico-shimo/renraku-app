@@ -161,6 +161,8 @@ a {
   border-bottom:  1px solid #ff8c00;
 }
 
+/* ↑以上middle部分 */
+
 
 .form__wrapper{
   min-height: calc(100vh - 161px);
