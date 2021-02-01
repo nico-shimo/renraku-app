@@ -1,8 +1,3 @@
-<div class="header">
-  <div class="inner">
-    <h1>連絡帳App</h1>
-</div>
-
 <div class="contents">
   <div class="container">
     <h2>新規会員登録</h2>
@@ -10,12 +5,12 @@
       <%= devise_error_messages! %>
 
       <div class="field">
-        <%= f.label :name %> <em>(6 characters maximum)</em><br />
+        <%= f.label :name %> <em>(6文字まで)</em><br />
         <%= f.text_field :name, autofocus: true %>
       </div>
 
       <div class="field">
-        <%= f.label :child_name %> <em>(6 characters maximum)</em><br />
+        <%= f.label :child_name %> <em>(6文字まで)</em><br />
         <%= f.text_field :child_name, autofocus: true %>
       </div>
 
@@ -27,7 +22,7 @@
       <div class="field">
         <%= f.label :password %>
         <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <em>(<%= @minimum_password_length %>文字以上)</em>
         <% end %><br />
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
@@ -41,6 +36,7 @@
         <%= f.submit "ログイン" %>
       </div>
     <% end %>
+    <br><br>
   </div>
 </div>
 
