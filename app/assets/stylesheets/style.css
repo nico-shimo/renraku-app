@@ -104,6 +104,10 @@ a {
   color: white;
 }
 
+.text h1 {
+  color: white;
+}
+
 .inner {
   width: 1024px;
   margin: 0 auto;

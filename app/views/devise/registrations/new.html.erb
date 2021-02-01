@@ -1,44 +1,48 @@
 <div class="box">
   <div class="box-inner">
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-    <h2>新規会員登録</h2>
+    <h1>新規会員登録</h1>
       <%= devise_error_messages! %>
-
-      <div class="field">
-        <%= f.label :name %> <em>(6文字まで)</em><br />
+      <div class="box-email">
+        <%= f.label :name , "お名前" %> <em></em><br />
         <%= f.text_field :name, autofocus: true %>
       </div>
 
-      <div class="field">
-        <%= f.label :child_name %> <em>(6文字まで)</em><br />
+      <div class="box-email">
+        <%= f.label :child_name, "お子様のお名前" %> <em></em><br />
         <%= f.text_field :child_name, autofocus: true %>
       </div>
 
-      <div class="field">
-        <%= f.label :email %><br />
+      <div class="box-email">
+        <%= f.label :email, "Eメール" %><br />
         <%= f.email_field :email %>
       </div>
 
-      <div class="field">
-        <%= f.label :password %>
+      <div class="box-email">
+        <%= f.label :password, "パスワード" %>
         <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %>文字以上)</em>
         <% end %><br />
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
 
-      <div class="field">
-        <%= f.label :password_confirmation %><br />
+      <div class="box-email">
+        <%= f.label :password_confirmation, "パスワード（確認）" %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
 
-      <div class="actions">
+      <div class="legal-text">
+          続行することで、レンラク！の
+          <%= link_to "利用規約", "#" %>
+          および
+          <%= link_to "プライバシー規約", "#" %>
+          に同意するものとみなされます。
+        </div><br>
+      <div class="box-login">
         <%= f.submit "ログイン" %>
       </div>
     <% end %>
-    <br><br>
   </div>
 </div>
-
 
 
