@@ -1,26 +1,25 @@
-<br></br>
-<div class="main">
-  <div class="inner">
+<div class="box">
+  <div class="box-inner">
     <div class="form__wrapper">
       <h2 class="page-heading">お知らせ投稿</h2>
         <%= form_with model: @print, local: true do |f|%>
-          <div class="field">
+          <div class="box-email">
             <%= f.label :title, "題名" %><br />
             <%= f.text_field :title %>
           </div>
 
-          <div class="field">
+          <div class="box-email">
             <%= f.label :text, "本文" %><br />
-            <%= f.text_area :text, class: :form__text %>
+            <%= f.text_area :text %>
           </div>
 
-          <div class="field">
+          <div class="box-email">
             <%= f.label :image, "画像" %><br />
             <%= f.file_field :image %>
-          </div>
+          </div><br>
 
-          <div class="actions">
-            <%= f.submit "保存する", class: :form__btn  %>
+          <div class="box-login">
+            <%= f.submit "投稿する" %>
           </div>
         <% end %>
     </div>
