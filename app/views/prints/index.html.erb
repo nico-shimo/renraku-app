@@ -1,26 +1,24 @@
-<div class="inner">
-  <li class='list'>
-    <% @prints.each do |print| %>
-      <div class="container">
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= print.title %>
-          </h3>
-          <div class='item-price'>
-            <span><%= l print.created_at %><br></span>
-          </div><br>
-          <div class='item-price'>
-            <span><%= print.text %><br></span>
-          </div>
-        </div>   
-        <% if print.image.attached? %>
-          <div class='item-img-content'>
-          <%= image_tag print.image.variant(resize: '500x500') %>
-          </div>
-          <% end%>
-          <br><br>
-          </div>
-        <% end %>
-  </li>
-</div>
+<div class="pri-main">
+  <% @prints.each do |print| %>
+  <div class="pri-container">
+    <div class='pri-info'>
+      <h3 class='pri-title'>
+        <%= print.title %>
+      </h3>
+      <div class='pri-time'>
+        <span><%= l print.created_at %><br></span>
+      </div><br>
+      <div class='pri-text'>
+        <span><%= print.text %><br></span>
+      </div>
+    </div>   
+    <% if print.image.attached? %>
+      <div class='pri-img-content'>
+      <%= image_tag print.image.variant(resize: '500x500') %>
+      </div>
+      <% end%>
+      <br><br>
+      </div>
+    <% end %>
+  </div>
 

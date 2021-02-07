@@ -1,24 +1,24 @@
-<div class="atte-main">
-<div class="inner">
-<h1 class>出欠一覧</h1>
-<br>
-<div class="atte-main">
-<div class="atte-contents">
-<table border="1">
-  <tr>
-    <th>名前</th><th>出欠</th><th>お風呂</th><th>朝ご飯</th><th>体温</th><th>投稿時間</th>
-  </tr>
-  <% @attendances.each do |attendance| %>
-  <tr>
-    <td><%= attendance.user.name %></td>
-    <td><%= attendance.presence.name %></td>
-    <td><%= attendance.bath.name %></td>
-    <td><%= attendance.breakfast.name %></td>
-    <td><%= attendance.temperture.name %></td>
-    <td><%= l attendance.created_at %></td>
-  </tr>
-  <% end %>
-</table>
-</div>
-</div>
+<div class="atten-b">
+  <div class="atte-title">
+  <h1 class>出欠一覧</h1>
+  </div>
+  
+    <div class="atte-contents">
+    <table border="1">
+      <tr>
+        <th>名前</th><th>出欠</th><th>お風呂</th><th>朝ご飯</th><th>体温</th><th>投稿時間</th>
+      </tr>
+      <% @attendances.each do |attendance| %>
+      <tr>
+        <td><%= attendance.user.name %></td>
+        <td><%= attendance.presence.name %></td>
+        <td><%= attendance.bath.name %></td>
+        <td><%= attendance.breakfast.name %></td>
+        <td><%= attendance.temperture.name %></td>
+        <td><%= l attendance.created_at %></td>
+      </tr>
+      <% end %>
+    </table>
+    </div>
+  
 </div>
