@@ -1,147 +1,163 @@
-<div class="header">
-  <div class="title">
-    <img src="/assets/renraku-logo-sample.png" alt="トップ画面" class="title-image">
+<div id="container">
+  <div class="header">
+    <div class="logo">
+      <%# <img src="/assets/renraku-logo-sample.png" alt="トップ画面" class="logo__img"> %>
+      <span class="logo__world">Renraku!</span>
+    </div>
+    <div class="login">
+      <div class="nav__btn">
+        <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
+      </div>
+      <% if user_signed_in? %>
+      <div class="nav__btn">
+        こんにちは、
+      <%= link_to current_user.name + "さん", "#", class: "subtitle" %>
+      </div>
+      <div class="nav__btn">
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
+      </div>
+      <% else %>
+      <div class="nav__btn">
+      <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
+      </div>
+      <div class="nav__btn">
+      <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
+      </div>
+      <% end %>
+    </div>
   </div>
-
-  <div class="login">
-    <div class="nav__btn">
-      <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
-    </div>
-    <% if user_signed_in? %>
-    <div class="nav__btn">
-      こんにちは、
-    <%= link_to current_user.name + "さん", "#", class: "subtitle" %>
-    </div>
-    <div class="nav__btn">
-    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
-    </div>
     
-    <% else %>
-    <div class="nav__btn">
-    <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
-    </div>
-    <div class="nav__btn">
-    <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
-    </div>
-    <% end %>
-    <div class="nav__btn">
-      <%= link_to 'menu', "#" %>
-    </div>
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    <div class="menu-content">
+      <ul>
+          <li>
+              <a href="#">メニューリンク1</a>
+          </li>
+          <li>
+              <a href="#">メニューリンク2</a>
+          </li>
+          <li>
+              <a href="#">メニューリンク3</a>
+          </li>
+      </ul>
     </div>
   </div>
-</div>
+  <ul class="font-sm">※こちらはポートフォリオサイトとなります</ul>
 
-<div class="contents">
-  <div class="first-view">
-    <img src="/assets/top-image.jpg" alt="トップ画面" class="top-image">
-    <div class="text">
-      <h1>スマホで簡単に<br>　　　毎日の連絡を送信しよう！</h1><br>
-      <p>　　　毎日の連絡は連絡フォームから送信するだけ。
-        <br>　　　詳細な連絡についてはメッセージ機能をご利用ください。
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class="middle">
-  <div class="middle-title">
-  <h2>ご利用方法</h2>
-  </div>
-  <div class="middle-body">
-    <div class="middle-image">
-    <img src="/assets/middle-image.jpg" alt="ミドル画面" >
-    </div>
-    <div class="middle-right-box">
-      <div class="middle-text">
-      <p>まずは「レンラク！」アプリに新規登録下さい。登録後<br>
-      は、ログインしていただければ、連絡帳機能を使用する<br>
-      ことができます。<br>
-      連絡帳フォームを送信すれば先生がすぐ確認できます。<br>
-      朝の忙しい時間をゆっくり過ごす助けになる<br>アプリケーションです。<br>
-      </div>
-      <div class="middle-sentence">
-      <h4>→ご登録は<%= link_to "こちら", new_user_registration_path, class: "middle-new-path" %>から</h4>
+  <div class="contents">
+    <div class="first-view">
+      <img src="/assets/top-image.jpg" alt="トップ画面" class="top-image">
+      <div class="text">
+        <h1>スマホで簡単に<br>　　　毎日の連絡を送信しよう！</h1><br>
+        <p>　　　毎日の連絡は連絡フォームから送信するだけ。
+          <br>　　　詳細な連絡についてはメッセージ機能をご利用ください。
+        </p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <h4>保護者の方はこちら</h4>
-    <div class="d-flex justify-content-center">
-      <div class="nav__btn">     
-        <div class="card" style="width: 18rem;">
-        <img src="http://3.bp.blogspot.com/-AC5vmYBscMw/UZRWELc3AzI/AAAAAAAASuk/MNSaQk3flwQ/s180-c/hanami_usagi.png" class="card-img-top" alt="...">
-          <div class="card-body">
-              <h5 class="card-title">お知らせを見る</h5>
-              <p class="card-text"></p>
-              <a href="../prints", class="btn btn-primary">お知らせ一覧へ</a>
-          </div>
+  <div class="middle">
+    <div class="middle-title">
+    <h2>ご利用方法</h2>
+    </div>
+    <div class="middle-body">
+      <div class="middle-image">
+      <img src="/assets/middle-image.jpg" alt="ミドル画面" >
+      </div>
+      <div class="middle-right-box">
+        <div class="middle-text">
+        <p>まずは「レンラク！」アプリに新規登録下さい。登録後<br>
+        は、ログインしていただければ、連絡帳機能を使用する<br>
+        ことができます。<br>
+        連絡帳フォームを送信すれば先生がすぐ確認できます。<br>
+        朝の忙しい時間をゆっくり過ごす助けになる<br>アプリケーションです。<br>
         </div>
-      </div>
-      <div class="nav__btn">
-        <div class="card" style="width: 18rem;">
-        <img src="http://2.bp.blogspot.com/-5Fk5W1srxDo/UZRWCaNXFXI/AAAAAAAASuA/c0YSomHMfhQ/s180-c/hanami_inu.png" class="card-img-top" alt="...">
-          <div class="card-body">
-              <%= link_to "チャットを作成する", rooms_path %>
-              <p class="card-text"></p>
-              <a href="../rooms", class="btn btn-primary">メッセージルームへ</a>
-          </div>
-        </div>
-      </div>
-      <div class="nav__btn">
-        <div class="card" style="width: 18rem;">
-        <img src="http://2.bp.blogspot.com/-Y_FYUDciASI/UZRWDTu8vgI/AAAAAAAASuQ/aOwVwq-FtBE/s180-c/hanami_neko.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">連絡帳を書く</h5>
-            <p class="card-text"></p>
-            <a href="../attendances/new", class="btn btn-primary">連絡帳へ</a>
-          </div>
+        <div class="middle-sentence">
+        <h4>→ご登録は<%= link_to "こちら", new_user_registration_path, class: "middle-new-path" %>から</h4>
         </div>
       </div>
     </div>
   </div>
-  <br>
+
   <div class="container">
-  <h4>先生はこちら</h4>
-    <div class="d-flex justify-content-center">
-      <div class="nav__btn">
-        <div class="card" style="width: 18rem;">
-        <img src="http://4.bp.blogspot.com/-JpovmLbHnKs/UZRWDZmapsI/AAAAAAAASuM/-YEd4TDlmX0/s180-c/hanami_kuma.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">お知らせを投稿する</h5>
-            <p class="card-text"></p>
-            <a href="../prints/new", class="btn btn-primary">お知らせ投稿へ</a>
+    <h4>保護者の方はこちら</h4>
+      <div class="d-flex justify-content-center">
+        <div class="nav__btn">     
+          <div class="card" style="width: 18rem;">
+          <img src="http://3.bp.blogspot.com/-AC5vmYBscMw/UZRWELc3AzI/AAAAAAAASuk/MNSaQk3flwQ/s180-c/hanami_usagi.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">お知らせを見る</h5>
+                <p class="card-text"></p>
+                <a href="../prints", class="btn btn-primary">お知らせ一覧へ</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="nav__btn">
-        <div class="card" style="width: 18rem;">
-        <img src="http://4.bp.blogspot.com/-4_mKp1Q71M0/UZRWEUWc4fI/AAAAAAAASuo/9AV4UUQz8l0/s180-c/hanami_zou.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">メッセージを確認する</h5>
-            <p class="card-text"></p>
-            <a href="../rooms", class="btn btn-primary">メッセージルームへ</a>
+        <div class="nav__btn">
+          <div class="card" style="width: 18rem;">
+          <img src="http://2.bp.blogspot.com/-5Fk5W1srxDo/UZRWCaNXFXI/AAAAAAAASuA/c0YSomHMfhQ/s180-c/hanami_inu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <%= link_to "チャットを作成する", rooms_path %>
+                <p class="card-text"></p>
+                <a href="../rooms", class="btn btn-primary">メッセージルームへ</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="nav__btn">
-        <div class="card" style="width: 18rem;">
-        <img src="https://3.bp.blogspot.com/-vhmBkneKWxM/VKTgi71CkvI/AAAAAAAAqUw/-bTdgeat85E/s180-c/pyoko04_sakura.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">出欠一覧を見る</h5>
-            <p class="card-text"></p>
-            <a href="../attendances", class="btn btn-primary">出欠一覧へ</a>
+        <div class="nav__btn">
+          <div class="card" style="width: 18rem;">
+          <img src="http://2.bp.blogspot.com/-Y_FYUDciASI/UZRWDTu8vgI/AAAAAAAASuQ/aOwVwq-FtBE/s180-c/hanami_neko.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">連絡帳を書く</h5>
+              <p class="card-text"></p>
+              <a href="../attendances/new", class="btn btn-primary">連絡帳へ</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <br>
+    <div class="container">
+    <h4>先生はこちら</h4>
+      <div class="d-flex justify-content-center">
+        <div class="nav__btn">
+          <div class="card" style="width: 18rem;">
+          <img src="http://4.bp.blogspot.com/-JpovmLbHnKs/UZRWDZmapsI/AAAAAAAASuM/-YEd4TDlmX0/s180-c/hanami_kuma.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">お知らせを投稿する</h5>
+              <p class="card-text"></p>
+              <a href="../prints/new", class="btn btn-primary">お知らせ投稿へ</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__btn">
+          <div class="card" style="width: 18rem;">
+          <img src="http://4.bp.blogspot.com/-4_mKp1Q71M0/UZRWEUWc4fI/AAAAAAAASuo/9AV4UUQz8l0/s180-c/hanami_zou.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">メッセージを確認する</h5>
+              <p class="card-text"></p>
+              <a href="../rooms", class="btn btn-primary">メッセージルームへ</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav__btn">
+          <div class="card" style="width: 18rem;">
+          <img src="https://3.bp.blogspot.com/-vhmBkneKWxM/VKTgi71CkvI/AAAAAAAAqUw/-bTdgeat85E/s180-c/pyoko04_sakura.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">出欠一覧を見る</h5>
+              <p class="card-text"></p>
+              <a href="../attendances", class="btn btn-primary">出欠一覧へ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
-  <div class ="footer">
+<div class ="footer">
   <p>
     Copyright RenrakuApp 2020.
   </p>
-  </div>
+</div>
 

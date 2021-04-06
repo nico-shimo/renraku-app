@@ -21,3 +21,26 @@ Stylesheet: 960px以上のモニタで適用
 .pb-lg {
   padding-bottom: 150px !important;
 }
+
+.login {
+  width: 60%;
+  display: flex;
+  margin: 20px;
+}
+
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em;
+  font-size: 0.9em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  margin: 10px;
+  transition: 0.4s ease;
+}
+
+.nav__btn a {
+  color: #87CEFA;
+}
