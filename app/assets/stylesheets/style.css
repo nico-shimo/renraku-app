@@ -15,7 +15,7 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 90;
-  background-color: #3584bb;
+  background-color: #F8F5CD;
 }
 
 .menu-btn span,
@@ -26,7 +26,7 @@
   height: 3px;
   width: 25px;
   border-radius: 3px;
-  background-color: #ffffff;
+  background-color: black;
   position: absolute;
 }
 
@@ -66,7 +66,7 @@
   top: 0;
   left: 0;
   z-index: 80;
-  background-color: #3584bb;
+  background-color: #F8F5CD;
 }
 
 .menu-content ul {
@@ -74,7 +74,7 @@
 }
 
 .menu-content ul li {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px black;
   list-style: none;
 }
 
@@ -84,7 +84,7 @@
   font-size: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
   padding: 9px 15px 10px 0;
   position: relative;
@@ -94,8 +94,8 @@
   content: "";
   width: 7px;
   height: 7px;
-  border-top: solid 2px #ffffff;
-  border-right: solid 2px #ffffff;
+  border-top: solid 2px black;
+  border-right: solid 2px black;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
@@ -111,7 +111,7 @@
   left: 100%;
   /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
-  background-color: #3584bb;
+  background-color: #F8F5CD;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   /*アニメーション設定*/
@@ -171,6 +171,10 @@ img {
 .content-width, .header {
   width: 90%;
   margin: 0 auto;
+}
+
+ul {
+  margin-left: 10px;
 }
 
 .header {
@@ -252,25 +256,31 @@ Stylesheet: 960px以上のモニタで適用
     display: -ms-flexbox;
     display: flex;
     margin: 20px;
+    margin-left: 60px;
   }
   .nav__btn {
     display: inline-block;
     padding: 0.4em;
     font-size: 0.9em;
-    color: #87CEFA;
+    color: black;
     text-decoration: none;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    border: 1px #87CEFA solid;
+    border: 1px #F8F5CD solid;
     border-radius: 3px;
     margin: 10px;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
+    background-color: #F8F5CD;
   }
   .nav__btn a {
-    color: #87CEFA;
+    color: black;
+  }
+  .nav__btn:hover {
+    color: black;
+    background: #F57506;
   }
 }
 
