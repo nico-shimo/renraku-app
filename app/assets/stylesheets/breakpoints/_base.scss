@@ -101,6 +101,11 @@ ul {
   margin-left: 5px;
 }
 
+.btn:hover {
+  color: black;
+  background: #F57506;
+}
+
 .nav__btn a {
   color: black;
 }
@@ -161,3 +166,19 @@ ul {
   margin-left: 3%;
 }
 
+@media (max-width: 960px) {
+  .inquiry__nav {
+    display: none;
+  }
+  .app__nav {
+    display: inline;
+  }
+  .app-img {
+    height: 7vh;
+    width: 38vw;
+  }
+  .app__nav p {
+    font-size: 1.2rem;
+  }
+
+}

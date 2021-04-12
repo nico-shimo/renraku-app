@@ -61,4 +61,31 @@ Stylesheet: 960px以上のモニタで適用
   .inquiry {
     display: none;
   }
+
+  .inquiry__nav {
+    font-size: 2rem;
+    display: flex;
+    margin-top: 5%;
+  }
+
 }
+
+.app__nav {
+  display: flex;
+  margin-top: 2%;
+}
+
+.app__nav p {
+  font-size: 2rem;
+}
+.app-img {
+  display: flex;
+  width: 20vw;
+  height: 9vh;
+  margin-left: 5px;
+}
+
+.app__img {
+  margin-left: 5px;
+}
+
