@@ -35,6 +35,12 @@ img {
   padding-bottom: 80px !important;
 }
 
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
 .content-width {
   width: 90%;
   margin: 0 auto;
@@ -47,7 +53,8 @@ ul {
 .header {
   height: 100px;
   display: flex;
-  @extend .content-width;
+  background-color: #F8F5CD;
+  // @extend .content-width;
 }
 
 .logo {
@@ -55,7 +62,7 @@ ul {
   width: 40%;
 
   &__img {
-    width: 10em;
+    width: 210px;
     margin-top: 10px;
   }
 }
@@ -68,4 +75,17 @@ ul {
   display: none;
 }
 
+.text h1 {
+  color: red;
+}
 
+.container {
+  background-color: #0bd;
+}
+
+#home {
+  background-image: url(/assets/main-bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  // background-color: #0bd;
+}

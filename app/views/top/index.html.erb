@@ -1,31 +1,31 @@
-<div id="container">
-  <div class="header">
-    <div class="logo">
-      <%# <img src="/assets/renraku-logo-sample.png" alt="トップ画面" class="logo__img"> %>
-      <span class="logo__world">Renraku!</span>
+<div id="container" >
+    <div class="header">
+        <div class="logo">
+          <img src="/assets/renraku-logo-sample.png" alt="トップ画面" class="logo__img">
+          <%# <span class="logo__world">Renraku!</span> %>
+        </div>
+      <div class="login">
+        <div class="nav__btn">
+          <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
+        </div>
+        <% if user_signed_in? %>
+        <div class="nav__btn">
+          こんにちは、
+        <%= link_to current_user.name + "さん", "#", class: "subtitle" %>
+        </div>
+        <div class="nav__btn">
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
+        </div>
+        <% else %>
+        <div class="nav__btn">
+        <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
+        </div>
+        <div class="nav__btn">
+        <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
+        </div>
+        <% end %>
+      </div>
     </div>
-    <div class="login">
-      <div class="nav__btn">
-        <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
-      </div>
-      <% if user_signed_in? %>
-      <div class="nav__btn">
-        こんにちは、
-      <%= link_to current_user.name + "さん", "#", class: "subtitle" %>
-      </div>
-      <div class="nav__btn">
-      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "subtitle" %>
-      </div>
-      <% else %>
-      <div class="nav__btn">
-      <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
-      </div>
-      <div class="nav__btn">
-      <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
-      </div>
-      <% end %>
-    </div>
-  </div>
     
   <div class="hamburger-menu">
     <input type="checkbox" id="menu-btn-check">
@@ -44,11 +44,10 @@
       </ul>
     </div>
   </div>
-  <ul class="font-sm">※こちらはポートフォリオサイトとなります</ul>
 
-  <div class="contents">
+  <div id="home" class="big-bg">
     <div class="first-view">
-      <img src="/assets/top-image.jpg" alt="トップ画面" class="top-image">
+      <%# <img src="/assets/main-bg.png" alt="トップ画面" class="top-image"> %>
       <div class="text">
         <h1>スマホで簡単に<br>　　　毎日の連絡を送信しよう！</h1><br>
         <p>　　　毎日の連絡は連絡フォームから送信するだけ。
