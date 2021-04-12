@@ -1,8 +1,8 @@
 <div id="container" >
     <div class="header">
         <div class="logo">
-          <img src="/assets/renraku-logo-sample.png" alt="トップ画面" class="logo__img">
-          <%# <span class="logo__world">Renraku!</span> %>
+          <%# <img src="/assets/renraku-logo-sample.png" alt="トップ画面" class="logo__img"> %>
+          <span class="logo__world">Renraku!</span>
         </div>
       <div class="login">
         <div class="nav__btn">
@@ -44,17 +44,32 @@
       </ul>
     </div>
   </div>
-
-  <div id="home" class="big-bg">
-    <div class="first-view">
-      <%# <img src="/assets/main-bg.png" alt="トップ画面" class="top-image"> %>
-      <div class="text">
-        <h1>スマホで簡単に<br>　　　毎日の連絡を送信しよう！</h1><br>
-        <p>　　　毎日の連絡は連絡フォームから送信するだけ。
-          <br>　　　詳細な連絡についてはメッセージ機能をご利用ください。
-        </p>
+  <section>
+      <div class="inquiry">
+          <p>お問い合わせはこちら➡️</p>
+          <div class="btn">お問い合わせフォームへ</div>
       </div>
-    </div>
+  </section>
+  <div id="home" class="big-bg">
+      <div class="home-content wrapper">
+          <div class="home-set">
+              <div class="page-title">
+                  <h2>毎日の連絡をもっと簡単に</h2>
+                  <p>スマホで手軽に連絡しよう!</p>
+              </div>
+              <div class="home-btn">
+                  <div class="nav__btn">
+                    <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
+                  </div>
+                  <div class="nav__btn">
+                    <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
+                  </div>
+                  <div class="nav__btn">
+                    <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
+                  </div>
+              </div>
+          </div>    
+      </div>
   </div>
 
   <div class="middle">
