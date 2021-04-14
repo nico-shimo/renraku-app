@@ -22,6 +22,11 @@ Stylesheet: 960px以上のモニタで適用
   padding-bottom: 150px !important;
 }
 
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .login {
   width: 60%;
   display: flex;
@@ -29,27 +34,84 @@ Stylesheet: 960px以上のモニタで適用
   margin-left: 60px;
 }
 
-.nav__btn{
-  display: inline-block;
-  padding: 0.4em;
-  font-size: 0.9em;
-  color: black;
-  text-decoration: none;
-  user-select: none;
-  border: 1px #F8F5CD solid;
-  border-radius: 3px;
-  margin: 10px;
-  transition: 0.4s ease;
-  background-color: #F8F5CD;
+#home {
+  background-image: url(/assets/main-bg.png);
+  background-size: cover;
 }
 
-.nav__btn a {
-  color: black;
+.page-title {
+  font-family: 'Philosopher', serif;
+}
 
+.page-title p {
+  font-size: 1.8rem;
+  color: aliceblue;
+}
+
+.home-content {
+  display: block;
+}
+
+@media (min-width: 959px) {
+  .home-btn {
+    display: none;
+  }
+
+  .page-title h2{
+    font-size: 3.5rem;
+    color: #F57506;
+    font-weight: lighter;
+  }
+
+  .inquiry {
+    display: none;
+  }
+
+  .inquiry__nav {
+    font-size: 2rem;
+    display: flex;
+    margin-top: 5%;
+  }
 
 }
 
-.nav__btn:hover{
-  color: black;
-  background: #F57506;
+.app__nav {
+  display: flex;
+  margin-top: 2%;
 }
+
+.app__nav p {
+  font-size: 2rem;
+}
+.app-img {
+  display: flex;
+  width: 20vw;
+  height: 9vh;
+  margin-left: 5px;
+}
+
+.app__img {
+  margin-left: 5px;
+}
+
+@media (min-width: 959px) {
+  .howto__body {
+      display: flex;
+  }
+  .howto__title {
+      font-size: 2rem;
+      margin-top: 2%;
+  }
+
+  .howto__img {
+      width: 60%;
+      margin: 5%;
+  }
+
+  .howto__text {
+      margin-top: 5%;
+      font-size: 1.6rem;
+  }
+}
+
+

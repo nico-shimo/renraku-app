@@ -7,3 +7,19 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+@media (min-width: 599px), (max-width:959px) {
+    .howto__body {
+        display: flex;
+    }
+
+    .howto__img {
+        width: 60%;
+        margin: 5%;
+    }
+
+    .howto__text {
+        margin-top: 5%;
+        font-size: 1.3rem;
+    }
+}

@@ -133,6 +133,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 
@@ -168,6 +169,12 @@ img {
   padding-bottom: 80px !important;
 }
 
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
 .content-width, .header {
   width: 90%;
   margin: 0 auto;
@@ -190,7 +197,7 @@ ul {
 }
 
 .logo__img {
-  width: 10em;
+  width: 210px;
   margin-top: 10px;
 }
 
@@ -200,6 +207,202 @@ ul {
 
 .login {
   display: none;
+}
+
+.nav__btn {
+  display: inline-block;
+  padding: 0.4em;
+  font-size: 0.9em;
+  color: black;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 3px;
+  margin: 2%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+}
+
+.btn {
+  padding: 0.2em;
+  font-size: 0.9em;
+  color: black;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  margin-left: 5px;
+}
+
+.btn:hover {
+  color: black;
+  background: #F57506;
+}
+
+.nav__btn a {
+  color: black;
+}
+
+.nav__btn:hover {
+  color: black;
+  background: #F57506;
+}
+
+.container {
+  background-color: #0bd;
+}
+
+#home {
+  background-image: url(/assets/main-bg.png);
+  min-height: 100vh;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.page-title {
+  font-family: 'Philosopher', serif;
+}
+
+.page-title h2 {
+  font-size: 1.6rem;
+  color: #F57506;
+  font-weight: bold;
+}
+
+.page-title p {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.home-content {
+  display: block;
+  position: relative;
+}
+
+.home-set {
+  position: absolute;
+  top: 50vh;
+  left: 5%;
+}
+
+.home-btn {
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.inquiry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3%;
+}
+
+.howto {
+  margin: 3%;
+}
+
+.howto__title h3 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #F57506;
+  font-weight: lighter;
+  margin-bottom: 3%;
+}
+
+.howto__title span {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2%;
+}
+
+.howto__text {
+  width: 90%;
+  text-align: center;
+  margin: 3%;
+}
+
+.service {
+  background-color: #F8F5CD;
+  margin-top: 5%;
+}
+
+.service__title h3 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #F57506;
+  font-weight: lighter;
+  margin: 5%;
+}
+
+.service__title span {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2%;
+}
+
+.service__icons {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 3%;
+}
+
+.icon-set {
+  display: block;
+  margin-left: 10%;
+}
+
+.service__icon img {
+  width: 16vw;
+  height: auto;
+}
+
+.icon-name p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 960px) {
+  .inquiry__nav {
+    display: none;
+  }
+  .app__nav {
+    display: inline;
+  }
+  .app-img {
+    height: 6.5vh;
+    width: 38vw;
+  }
+  .app__nav p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 459px) {
+  .howto__body {
+    display: block;
+  }
+  .howto__img {
+    margin: 5%;
+    text-align: center;
+  }
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 480px) {
@@ -223,6 +426,22 @@ Stylesheet: 600px以上のタブレットやモニタで適用
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) and (min-width: 599px), (min-width: 600px) and (max-width: 959px) {
+  .howto__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .howto__img {
+    width: 60%;
+    margin: 5%;
+  }
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1.3rem;
   }
 }
 
@@ -250,6 +469,10 @@ Stylesheet: 960px以上のモニタで適用
   .pb-lg {
     padding-bottom: 150px !important;
   }
+  .content-width, .header {
+    width: 90%;
+    margin: 0 auto;
+  }
   .login {
     width: 60%;
     display: -webkit-box;
@@ -258,29 +481,83 @@ Stylesheet: 960px以上のモニタで適用
     margin: 20px;
     margin-left: 60px;
   }
-  .nav__btn {
-    display: inline-block;
-    padding: 0.4em;
-    font-size: 0.9em;
-    color: black;
-    text-decoration: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    border: 1px #F8F5CD solid;
-    border-radius: 3px;
-    margin: 10px;
-    -webkit-transition: 0.4s ease;
-    transition: 0.4s ease;
-    background-color: #F8F5CD;
+  #home {
+    background-image: url(/assets/main-bg.png);
+    background-size: cover;
   }
-  .nav__btn a {
-    color: black;
+  .page-title {
+    font-family: 'Philosopher', serif;
   }
-  .nav__btn:hover {
-    color: black;
-    background: #F57506;
+  .page-title p {
+    font-size: 1.8rem;
+    color: aliceblue;
+  }
+  .home-content {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 959px) {
+  .home-btn {
+    display: none;
+  }
+  .page-title h2 {
+    font-size: 3.5rem;
+    color: #F57506;
+    font-weight: lighter;
+  }
+  .inquiry {
+    display: none;
+  }
+  .inquiry__nav {
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 960px) {
+  .app__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2%;
+  }
+  .app__nav p {
+    font-size: 2rem;
+  }
+  .app-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    height: 9vh;
+    margin-left: 5px;
+  }
+  .app__img {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 959px) {
+  .howto__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .howto__title {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+  .howto__img {
+    width: 60%;
+    margin: 5%;
+  }
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1.6rem;
   }
 }
 
