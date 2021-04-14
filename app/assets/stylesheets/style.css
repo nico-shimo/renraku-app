@@ -133,6 +133,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 
@@ -220,7 +221,7 @@ ul {
           user-select: none;
   border: 1px #F8F5CD solid;
   border-radius: 3px;
-  margin: 10px;
+  margin: 2%;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   background-color: #F8F5CD;
@@ -236,7 +237,7 @@ ul {
       -ms-user-select: none;
           user-select: none;
   border: 1px #F8F5CD solid;
-  border-radius: 3px;
+  border-radius: 10px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   background-color: #F8F5CD;
@@ -310,6 +311,70 @@ ul {
   margin-left: 3%;
 }
 
+.howto {
+  margin: 3%;
+}
+
+.howto__title h3 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #F57506;
+  font-weight: lighter;
+  margin-bottom: 3%;
+}
+
+.howto__title span {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2%;
+}
+
+.howto__text {
+  width: 90%;
+  text-align: center;
+  margin: 3%;
+}
+
+.service {
+  background-color: #F8F5CD;
+  margin-top: 5%;
+}
+
+.service__title h3 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #F57506;
+  font-weight: lighter;
+  margin: 5%;
+}
+
+.service__title span {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2%;
+}
+
+.service__icons {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 3%;
+}
+
+.icon-set {
+  display: block;
+  margin-left: 10%;
+}
+
+.service__icon img {
+  width: 16vw;
+  height: auto;
+}
+
+.icon-name p {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 960px) {
   .inquiry__nav {
     display: none;
@@ -318,11 +383,25 @@ ul {
     display: inline;
   }
   .app-img {
-    height: 7vh;
+    height: 6.5vh;
     width: 38vw;
   }
   .app__nav p {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 459px) {
+  .howto__body {
+    display: block;
+  }
+  .howto__img {
+    margin: 5%;
+    text-align: center;
+  }
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1rem;
   }
 }
 
@@ -350,6 +429,22 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   }
 }
 
+@media (min-width: 600px) and (min-width: 599px), (min-width: 600px) and (max-width: 959px) {
+  .howto__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .howto__img {
+    width: 60%;
+    margin: 5%;
+  }
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1.3rem;
+  }
+}
+
 @media (min-width: 960px) {
   /******************************************************************
 
@@ -373,6 +468,10 @@ Stylesheet: 960px以上のモニタで適用
   }
   .pb-lg {
     padding-bottom: 150px !important;
+  }
+  .content-width, .header {
+    width: 90%;
+    margin: 0 auto;
   }
   .login {
     width: 60%;
@@ -439,6 +538,26 @@ Stylesheet: 960px以上のモニタで適用
   }
   .app__img {
     margin-left: 5px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 959px) {
+  .howto__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .howto__title {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+  .howto__img {
+    width: 60%;
+    margin: 5%;
+  }
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1.6rem;
   }
 }
 

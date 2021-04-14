@@ -70,6 +70,7 @@
               </div>
 
               <div class="home-btn">
+                  <p>会員登録はこちら</p>
                   <div class="nav__btn">
                     <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
                   </div>
@@ -83,30 +84,83 @@
           </div>    
       </div>
   </div>
-
-  <div class="middle">
-    <div class="middle-title">
-    <h2>ご利用方法</h2>
-    </div>
-    <div class="middle-body">
-      <div class="middle-image">
-      <img src="/assets/middle-image.jpg" alt="ミドル画面" >
-      </div>
-      <div class="middle-right-box">
-        <div class="middle-text">
-        <p>まずは「レンラク！」アプリに新規登録下さい。登録後<br>
-        は、ログインしていただければ、連絡帳機能を使用する<br>
-        ことができます。<br>
-        連絡帳フォームを送信すれば先生がすぐ確認できます。<br>
-        朝の忙しい時間をゆっくり過ごす助けになる<br>アプリケーションです。<br>
+  <section class="howto">
+      <div class="howto__content">
+        <div class="howto__title">
+        <h3><span>ご利用方法</span>
+        </h3>
         </div>
-        <div class="middle-sentence">
-        <h4>→ご登録は<%= link_to "こちら", new_user_registration_path, class: "middle-new-path" %>から</h4>
+        <div class="howto__body">
+          <div class="howto__img">
+          <img src="/assets/middle-image.jpg" alt="ミドル画面" >
+          </div>
+          <div class="howto__text">
+              <p>
+                  まずは「レンラク！」アプリに新規登録下さい。登録後
+                  は、ログインしていただければ、連絡帳機能を使用する
+                  ことができます。
+                  連絡帳フォームを送信すれば先生がすぐ確認できます。
+                  朝の忙しい時間をゆっくり過ごす助けになるアプリケーションです。
+              </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
+  </section>
+  <section class="service">
+      <div class="service__content">
+        <div class="service__title">
+        <h3><span>レンラク！のサービス紹介</span>
+        </h3>
+        </div>
+        <div class="service__icons">
+            <div class="icon-set">
+                <div class="service__icon">
+                <img src="/assets/service-icon1.png" alt="連絡帳アイコン">
+                </div>
+                <div class="icon-name">
+                <p>連絡帳機能</p>
+                </div>
+            </div>
+            <div class="icon-set">
+                <div class="service__icon">
+                <img src="/assets/service-icon2.png" alt="出欠アイコン">
+                </div>
+                <div class="icon-name">
+                <p>出欠管理</p>
+                </div>
+            </div>
+            <div class="icon-set">
+                <div class="service__icon">
+                <img src="/assets/service-icon3.png" alt="お知らせアイコン">
+                </div>
+                <div class="icon-name">
+                <p>お知らせ配信</p>
+                </div>
+            </div>
+            <div class="icon-set">
+                <div class="service__icon">
+                <img src="/assets/service-icon4.png" alt="メッセージアイコン">
+                </div>
+                <div class="icon-name">
+                <p>個別メッセージ</p>
+                </div>
+            </div>
+            <div class="icon-set">
+                <div class="service__icon">
+                <img src="/assets/service-icon5.png" alt="写真アイコン">
+                </div>
+                <div class="icon-name">
+                <p>写真投稿機能</p>
+                </div>
+            </div>
+        </div>
+        <div class="service__text">
+            <p>
+              出欠確認はフォームで簡単入力して、ボタン一つで送信完了となります。お知らせは一斉配信ができて保護者の方はスマホでいつでも確認することができます。
+            </p>
+        </div>
+      </div>
+  </section>
   <div class="container">
     <h4>保護者の方はこちら</h4>
       <div class="d-flex justify-content-center">

@@ -22,6 +22,11 @@ Stylesheet: 960px以上のモニタで適用
   padding-bottom: 150px !important;
 }
 
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .login {
   width: 60%;
   display: flex;
@@ -88,4 +93,25 @@ Stylesheet: 960px以上のモニタで適用
 .app__img {
   margin-left: 5px;
 }
+
+@media (min-width: 959px) {
+  .howto__body {
+      display: flex;
+  }
+  .howto__title {
+      font-size: 2rem;
+      margin-top: 2%;
+  }
+
+  .howto__img {
+      width: 60%;
+      margin: 5%;
+  }
+
+  .howto__text {
+      margin-top: 5%;
+      font-size: 1.6rem;
+  }
+}
+
 

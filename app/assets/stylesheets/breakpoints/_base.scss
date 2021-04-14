@@ -8,6 +8,7 @@ body {
 }
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 .font-sm {
@@ -83,7 +84,7 @@ ul {
   user-select: none;
   border: 1px #F8F5CD solid;
   border-radius: 3px;
-  margin: 10px;
+  margin: 2%;
   transition: 0.4s ease;
   background-color: #F8F5CD;
 }
@@ -95,7 +96,7 @@ ul {
   text-decoration: none;
   user-select: none;
   border: 1px #F8F5CD solid;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: 0.4s ease;
   background-color: #F8F5CD;
   margin-left: 5px;
@@ -166,6 +167,72 @@ ul {
   margin-left: 3%;
 }
 
+// howtoセクション
+
+.howto {
+  // background-color: #F8F5CD;
+  margin: 3%;
+
+  &__title h3 {
+    text-align: center;
+    font-size: 1.4em;
+    color: #F57506;
+    font-weight: lighter;
+    margin-bottom: 3%;
+  }
+
+  &__title span {
+      border-bottom: 1px solid #707070;
+      padding-bottom: 2%;
+  }
+  &__text {
+    width: 90%;
+    text-align: center;
+    margin: 3%;
+  }
+}
+
+// serviceセクション
+.service {
+  background-color: #F8F5CD;
+  margin-top: 5%;
+
+  &__title h3 {
+    text-align: center;
+    font-size: 1.4em;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+
+  &__title span {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2%;
+}
+
+  &__icons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 3%;
+  }
+}
+.icon-set {
+  display: block;
+  margin-left: 10%;
+}
+.service__icon img {
+  width: 16vw;
+  height: auto;
+}
+.icon-name p{
+    font-size: 0.8rem;
+}
+
+
+
+
+
 @media (max-width: 960px) {
   .inquiry__nav {
     display: none;
@@ -174,11 +241,25 @@ ul {
     display: inline;
   }
   .app-img {
-    height: 7vh;
+    height: 6.5vh;
     width: 38vw;
   }
   .app__nav p {
     font-size: 1.2rem;
   }
+}
 
+@media (max-width: 459px) {
+  .howto__body {
+    display: block;
+  }
+  .howto__img {
+    margin: 5%;
+    text-align: center;
+  }
+
+  .howto__text {
+    margin-top: 5%;
+    font-size: 1rem;
+  }
 }
