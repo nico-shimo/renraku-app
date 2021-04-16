@@ -4,3 +4,46 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
 
+// serviceセクション
+
+
+.service {
+  background-color: #F8F5CD;
+  margin-top: 5%;
+
+  &__title h3 {
+    text-align: center;
+    font-size: 1.4em;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+
+  &__title span {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2%;
+}
+
+  &__icons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 3%;
+  }
+
+  &__text {
+    margin-bottom: 7%;
+    font-size: 1.2rem;
+  }
+}
+.icon-set {
+  display: block;
+  margin-left: 10%;
+}
+.service__icon img {
+  width: 40px;
+  height: auto;
+}
+.icon-name p{
+    font-size: 0.8rem;
+}

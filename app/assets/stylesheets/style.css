@@ -361,6 +361,11 @@ ul {
   margin-left: 3%;
 }
 
+.service__text {
+  margin: 7%;
+  font-size: 1rem;
+}
+
 .icon-set {
   display: block;
   margin-left: 10%;
@@ -411,6 +416,44 @@ ul {
 Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
+  .service {
+    background-color: #F8F5CD;
+    margin-top: 5%;
+  }
+  .service__title h3 {
+    text-align: center;
+    font-size: 1.4em;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+  .service__title span {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2%;
+  }
+  .service__icons {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 3%;
+  }
+  .service__text {
+    margin-bottom: 7%;
+    font-size: 1.2rem;
+  }
+  .icon-set {
+    display: block;
+    margin-left: 10%;
+  }
+  .service__icon img {
+    width: 40px;
+    height: auto;
+  }
+  .icon-name p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -558,6 +601,59 @@ Stylesheet: 960px以上のモニタで適用
   .howto__text {
     margin-top: 5%;
     font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 959px) {
+  .service {
+    background-color: #F8F5CD;
+    margin-top: 5%;
+  }
+  .service__content {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .service__title h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 2%;
+  }
+  .service__title span {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2%;
+  }
+  .service__icons {
+    width: 60%;
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  .service__text {
+    width: 40%;
+    margin: 7%;
+    font-size: 1.4rem;
+  }
+  .service__lower {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .icon-set {
+    display: block;
+    margin-left: 10%;
+  }
+  .service__icon img {
+    width: 100px;
+    height: auto;
+  }
+  .icon-name p {
+    font-size: 1.2rem;
   }
 }
 
