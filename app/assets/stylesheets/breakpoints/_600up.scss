@@ -23,3 +23,32 @@ Stylesheet: 600px以上のタブレットやモニタで適用
         font-size: 1.3rem;
     }
 }
+
+.social {
+    &__title h3 {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #F57506;
+      font-weight: lighter;
+      margin: 5%;
+    }
+    &__text p {
+      margin-bottom: 4%;
+      font-size: 1.4rem;
+    }
+    &__title span {
+      border-bottom: 1px solid #707070;
+      padding-bottom: 2%;
+    }
+    &__voice {
+      margin: 2%;
+    }
+    &__voice p {
+      font-size: 1.2rem;
+    }
+    &__voice span {
+      font-size: 1.3rem;
+      border-bottom: #0bd solid 1px;
+    }
+  
+  }

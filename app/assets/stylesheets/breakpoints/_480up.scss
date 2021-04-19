@@ -47,3 +47,18 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 .icon-name p{
     font-size: 0.8rem;
 }
+
+.social {
+  &__title h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+  &__text p {
+    margin-bottom: 4%;
+    font-size: 1.2rem;
+  }
+}
+

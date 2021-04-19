@@ -410,6 +410,60 @@ ul {
   }
 }
 
+.social-content {
+  width: 90%;
+  background-color: #fff;
+  margin: 0 auto 10%;
+}
+
+.social__title h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #F57506;
+  font-weight: lighter;
+  margin: 5%;
+}
+
+.social__text p {
+  margin-bottom: 4%;
+  font-size: 1.1rem;
+}
+
+.social__title span {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2%;
+}
+
+.social__bottom {
+  display: block;
+}
+
+.social__iconset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__voice {
+  margin: 2%;
+}
+
+.social__voice p {
+  font-size: 1rem;
+}
+
+.social__voice span {
+  font-size: 1.2rem;
+  border-bottom: solid 1px #F57506;
+}
+
+.social__image {
+  width: 250px;
+  height: auto;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -454,6 +508,17 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
   .icon-name p {
     font-size: 0.8rem;
   }
+  .social__title h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+  .social__text p {
+    margin-bottom: 4%;
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -485,6 +550,34 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .howto__text {
     margin-top: 5%;
     font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .social__title h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+  .social__text p {
+    margin-bottom: 4%;
+    font-size: 1.4rem;
+  }
+  .social__title span {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2%;
+  }
+  .social__voice {
+    margin: 2%;
+  }
+  .social__voice p {
+    font-size: 1.2rem;
+  }
+  .social__voice span {
+    font-size: 1.3rem;
+    border-bottom: #0bd solid 1px;
   }
 }
 
@@ -654,6 +747,46 @@ Stylesheet: 960px以上のモニタで適用
   }
   .icon-name p {
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .social__title h3 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+  .social__text p {
+    margin-bottom: 4%;
+    font-size: 1.6rem;
+  }
+  .social__bottom {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .social__iconset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .social__voice {
+    margin: 2%;
+  }
+  .social__voice p {
+    font-size: 1.4rem;
+  }
+  .social__voice span {
+    font-size: 1.6rem;
+    border-bottom: solid 1px #F57506;
+  }
+  .social__image {
+    width: 350px;
+    height: auto;
+    margin-right: 2%;
+    margin-top: 5%;
   }
 }
 
