@@ -268,3 +268,56 @@ ul {
     font-size: 1rem;
   }
 }
+
+// socialセクション
+.social-content {
+  width: 90%;
+  background-color:#fff;
+  margin: 0 auto 10%;
+}
+
+.social {
+  &__title h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #F57506;
+    font-weight: lighter;
+    margin: 5%;
+  }
+  &__text p {
+    margin-bottom: 4%;
+    font-size: 1.1rem;
+  }
+  &__title span {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 2%;
+  }
+  &__bottom {
+    display: block;
+  }
+  &__iconset {
+    display: flex;
+  }
+  &__voice {
+    margin: 2%;
+  }
+  &__voice p {
+    font-size: 1rem;
+  }
+  &__voice span {
+    font-size: 1.2rem;
+    border-bottom: solid 1px #F57506;
+  }
+
+  &__image {
+    width: 250px;
+    height: auto;
+    margin-right: 2%;
+    margin-top: 5%;
+
+  }
+
+}
+
+
+

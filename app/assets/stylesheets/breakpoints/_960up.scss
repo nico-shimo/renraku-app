@@ -172,5 +172,39 @@ Stylesheet: 960px以上のモニタで適用
     }
   }
 
-
+  .social {
+    &__title h3 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #F57506;
+      font-weight: lighter;
+      margin: 5%;
+    }
+    &__text p {
+      margin-bottom: 4%;
+      font-size: 1.6rem;
+    }
+    &__bottom {
+      display: inline-flex;
+    }
+    &__iconset {
+      display: flex;
+    }
+    &__voice {
+      margin: 2%;
+    }
+    &__voice p {
+      font-size: 1.4rem;
+    }
+    &__voice span {
+      font-size: 1.6rem;
+      border-bottom: solid 1px #F57506;
+    }
+    &__image {
+      width: 350px;
+      height: auto;
+      margin-right: 2%;
+      margin-top: 5%;
+    }
+  }
 
