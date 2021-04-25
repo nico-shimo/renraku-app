@@ -48,7 +48,17 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     }
     &__voice span {
       font-size: 1.3rem;
-      border-bottom: #0bd solid 1px;
+      border-bottom: #F57506 solid 1px;
     }
   
   }
+
+// よくある質問セクション
+.question {
+  &__text p {
+    font-size: 1.1rem;
+  }
+  &__text h4 {
+    font-size: 1.2rem;
+  }
+}
