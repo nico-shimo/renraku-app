@@ -4,9 +4,9 @@
           <span class="logo__world">Renraku!</span>
         </div>
       <div class="login">
-        <div class="nav__btn">
-          <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
-        </div>
+        <%# <div class="nav__btn"> %>
+          <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post, class: "nav__btn" %>
+        <%# </div> %>
         <% if user_signed_in? %>
         <div class="nav__btn">
           こんにちは、
