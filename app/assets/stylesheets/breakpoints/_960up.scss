@@ -286,4 +286,48 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
+#bottom {
+  background: url('/assets/bottom-img1.jpeg') 0 0 no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+}
 
+.bottom{
+  background-color: #fff;
+  display:block;
+  position: relative;
+}
+
+.bottom img{
+  opacity: 0.5;
+  display:block;
+}
+
+.bottom p {
+  position: absolute;
+  color: #F57506;
+  font-size: 2.3rem;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  font-family: 'Philosopher', serif;
+  font-weight: bold;
+}
+
+.bottom__btn {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  padding: 0.2em;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  margin-left: 5px;
+}

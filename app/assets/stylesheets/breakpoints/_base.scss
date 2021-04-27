@@ -379,4 +379,47 @@ ul {
   }
 }
 
+// bottomセクション
+.bottom{
+  background-color: #fff;
+  display:block;
+  position: relative;
+}
 
+.bottom img{
+  opacity: 0.5;
+  display:block;
+}
+
+.bottom p {
+  position: absolute;
+  color: #F57506;
+  font-size: 1.4rem;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  font-family: 'Philosopher', serif;
+  font-weight: bold;
+}
+
+.bottom__btn {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  padding: 0.2em;
+  font-size: 0.9em;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  margin-left: 5px;
+}
+
+.bottom__btn:hover {
+  color: black;
+  background: #F57506;
+}
