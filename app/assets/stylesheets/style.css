@@ -597,8 +597,41 @@ ul {
 
 .footer__content {
   width: 90%;
-  background-color: pink;
+  background-color: #F8F5CD;
   margin: 3% auto;
+}
+
+.footer {
+  margin-top: 5%;
+}
+
+.footer__logo {
+  color: #F57506;
+  margin-left: 3%;
+}
+
+.footer__box {
+  height: auto;
+  margin-left: 0;
+}
+
+.footer__nav {
+  display: inline-block;
+}
+
+.footer__nav a {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.footer__nav a:hover {
+  color: #F57506;
+}
+
+.copyright p {
+  text-align: end;
+  margin: 2%;
+  font-size: 0.7rem;
 }
 
 @media (min-width: 480px) {
@@ -695,8 +728,34 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     background-color: #F8F5CD;
     margin-left: 5px;
   }
-  #bottom__text p {
-    display: none;
+  .footer {
+    margin-top: 5%;
+  }
+  .footer__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .footer__nav a {
+    color: #000;
+    font-size: 0.9rem;
+  }
+  .footer__nav a:hover {
+    color: #F57506;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 2%;
+    font-size: 0.9rem;
   }
 }
 
@@ -803,8 +862,34 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     background-color: #F8F5CD;
     margin-left: 5px;
   }
-  #bottom__text p {
-    display: none;
+  .footer {
+    margin-top: 5%;
+  }
+  .footer__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .footer__nav a {
+    color: #000;
+    font-size: 1rem;
+  }
+  .footer__nav a:hover {
+    color: #F57506;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 2%;
+    font-size: 1rem;
   }
 }
 
@@ -1202,6 +1287,35 @@ Stylesheet: 1280px以上のモニタで適用
     background-color: #fff;
     display: block;
     position: relative;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+  .footer__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .footer__nav a {
+    color: #000;
+    font-size: 1.1rem;
+  }
+  .footer__nav a:hover {
+    color: #F57506;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 2%;
+    font-size: 1.1rem;
   }
 }
 

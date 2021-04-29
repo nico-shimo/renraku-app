@@ -102,6 +102,32 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   margin-left: 5px;
 }
 
-#bottom__text p {
-  display: none;
+.footer {
+  margin-top: 5%;
+
+  &__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  &__nav a {
+    color: #000;
+    font-size: 1rem;
+  }
+  &__nav a:hover {
+    color: #F57506;
+  }
+}
+
+.copyright p {
+  text-align: center;
+  margin: 2%;
+  font-size: 1rem;
 }

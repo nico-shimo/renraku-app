@@ -47,3 +47,33 @@ Stylesheet: 1280px以上のモニタで適用
   display:block;
   position: relative;
 }
+
+.footer {
+  margin-top: 5%;
+
+  &__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  &__nav a {
+    color: #000;
+    font-size: 1.1rem;
+  }
+  &__nav a:hover {
+    color: #F57506;
+  }
+}
+
+.copyright p {
+  text-align: center;
+  margin: 2%;
+  font-size: 1.1rem;
+}
