@@ -331,3 +331,19 @@ Stylesheet: 960px以上のモニタで適用
   background-color: #F8F5CD;
   margin-left: 5px;
 }
+
+#bottom__text p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #F57506;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+
+}
+
+.bottom {
+  background-color: #fff;
+  display:block;
+  position: relative;
+}

@@ -586,6 +586,21 @@ ul {
   background: #F57506;
 }
 
+.bottom__text p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #F57506;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+.footer__content {
+  width: 90%;
+  background-color: pink;
+  margin: 3% auto;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -679,6 +694,9 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     transition: 0.4s ease;
     background-color: #F8F5CD;
     margin-left: 5px;
+  }
+  #bottom__text p {
+    display: none;
   }
 }
 
@@ -784,6 +802,9 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     transition: 0.4s ease;
     background-color: #F8F5CD;
     margin-left: 5px;
+  }
+  #bottom__text p {
+    display: none;
   }
 }
 
@@ -1119,6 +1140,19 @@ Stylesheet: 960px以上のモニタで適用
     background-color: #F8F5CD;
     margin-left: 5px;
   }
+  #bottom__text p {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #F57506;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1155,6 +1189,19 @@ Stylesheet: 1280px以上のモニタで適用
     transition: 0.4s ease;
     background-color: #F8F5CD;
     font-size: 1.4rem;
+  }
+  #bottom__text p {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #F57506;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
   }
 }
 

@@ -380,7 +380,7 @@ ul {
 }
 
 // bottomセクション
-.bottom{
+.bottom {
   background-color: #fff;
   display:block;
   position: relative;
@@ -422,4 +422,22 @@ ul {
 .bottom__btn:hover {
   color: black;
   background: #F57506;
+}
+
+.bottom__text p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #F57506;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+
+}
+.footer__content {
+  width: 90%;
+  background-color: pink;
+  margin: 3% auto;
+}
+
+.footer {
 }
