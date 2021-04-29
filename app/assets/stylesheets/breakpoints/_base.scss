@@ -52,8 +52,8 @@ ul {
 }
 
 .header {
-  height: 100px;
-  display: flex;
+  height: auto;
+  display: block;
   @extend .content-width;
 }
 
@@ -72,7 +72,7 @@ ul {
 }
 
 .login {
-  display: none;
+  display: inline-block;
 }
 
 .nav__btn{

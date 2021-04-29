@@ -185,10 +185,8 @@ ul {
 }
 
 .header {
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: auto;
+  display: block;
 }
 
 .logo {
@@ -206,7 +204,7 @@ ul {
 }
 
 .login {
-  display: none;
+  display: inline-block;
 }
 
 .nav__btn {
@@ -640,6 +638,12 @@ ul {
 Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 
 ******************************************************************/
+  .header {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .service {
     background-color: #F8F5CD;
     margin-top: 5%;
