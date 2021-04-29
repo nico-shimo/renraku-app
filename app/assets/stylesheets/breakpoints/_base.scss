@@ -87,6 +87,8 @@ ul {
   margin: 2%;
   transition: 0.4s ease;
   background-color: #F8F5CD;
+  width: auto;
+  height: 35px;
 }
 
 .btn {
@@ -377,4 +379,91 @@ ul {
   }
 }
 
+// bottomセクション
+.bottom {
+  background-color: #fff;
+  display:block;
+  position: relative;
+}
 
+.bottom img{
+  opacity: 0.5;
+  display:block;
+}
+
+.bottom p {
+  position: absolute;
+  color: #F57506;
+  font-size: 1.4rem;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  font-family: 'Philosopher', serif;
+  font-weight: bold;
+}
+
+.bottom__btn {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  padding: 0.2em;
+  font-size: 0.9em;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  margin-left: 5px;
+}
+
+.bottom__btn:hover {
+  color: black;
+  background: #F57506;
+}
+
+.bottom__text p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #F57506;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+
+}
+.footer__content {
+  width: 90%;
+  background-color: #F8F5CD;
+  margin: 3% auto;
+}
+
+.footer {
+  margin-top: 5%;
+
+  &__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  &__box {
+    height: auto;
+    margin-left: 0;
+  }
+  &__nav {
+    display: inline-block;
+  }
+  &__nav a {
+    color: #000;
+    font-size: 0.8rem;
+  }
+  &__nav a:hover {
+    color: #F57506;
+  }
+}
+
+.copyright p {
+  text-align: end;
+  margin: 2%;
+  font-size: 0.7rem;
+}

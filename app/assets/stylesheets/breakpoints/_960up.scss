@@ -52,6 +52,22 @@ Stylesheet: 960px以上のモニタで適用
   display: block;
 }
 
+.nav__btn{
+  width: auto;
+  height: 50px;
+  display: inline-block;
+  padding: 0.4em;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 3px;
+  margin: 2%;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  font-size: 1rem;
+}
+
 @media (min-width: 959px) {
   .home-btn {
     display: none;
@@ -270,4 +286,65 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
+#bottom {
+  background: url('/assets/bottom-img1.jpeg') 0 0 no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+}
+
+.bottom{
+  background-color: #fff;
+  display:block;
+  position: relative;
+}
+
+.bottom img{
+  opacity: 0.5;
+  display:block;
+}
+
+.bottom p {
+  position: absolute;
+  color: #F57506;
+  font-size: 2.3rem;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  font-family: 'Philosopher', serif;
+  font-weight: bold;
+}
+
+.bottom__btn {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  padding: 0.2em;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  margin-left: 5px;
+}
+
+#bottom__text p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #F57506;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+
+}
+
+.bottom {
+  background-color: #fff;
+  display:block;
+  position: relative;
+}
 

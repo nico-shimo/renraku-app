@@ -225,6 +225,8 @@ ul {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   background-color: #F8F5CD;
+  width: auto;
+  height: 35px;
 }
 
 .btn {
@@ -536,6 +538,102 @@ ul {
           transform: translateY(2px);
 }
 
+.bottom {
+  background-color: #fff;
+  display: block;
+  position: relative;
+}
+
+.bottom img {
+  opacity: 0.5;
+  display: block;
+}
+
+.bottom p {
+  position: absolute;
+  color: #F57506;
+  font-size: 1.4rem;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  font-family: 'Philosopher', serif;
+  font-weight: bold;
+}
+
+.bottom__btn {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  padding: 0.2em;
+  font-size: 0.9em;
+  color: black;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px #F8F5CD solid;
+  border-radius: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  background-color: #F8F5CD;
+  margin-left: 5px;
+}
+
+.bottom__btn:hover {
+  color: black;
+  background: #F57506;
+}
+
+.bottom__text p {
+  width: 60%;
+  font-size: 1.2rem;
+  color: #F57506;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+.footer__content {
+  width: 90%;
+  background-color: #F8F5CD;
+  margin: 3% auto;
+}
+
+.footer {
+  margin-top: 5%;
+}
+
+.footer__logo {
+  color: #F57506;
+  margin-left: 3%;
+}
+
+.footer__box {
+  height: auto;
+  margin-left: 0;
+}
+
+.footer__nav {
+  display: inline-block;
+}
+
+.footer__nav a {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.footer__nav a:hover {
+  color: #F57506;
+}
+
+.copyright p {
+  text-align: end;
+  margin: 2%;
+  font-size: 0.7rem;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -590,6 +688,74 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
   .social__text p {
     margin-bottom: 4%;
     font-size: 1.2rem;
+  }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  .bottom img {
+    opacity: 0.5;
+    display: block;
+  }
+  .bottom p {
+    position: absolute;
+    color: #F57506;
+    font-size: 1.6rem;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    font-family: 'Philosopher', serif;
+    font-weight: bold;
+  }
+  .bottom__btn {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    padding: 0.2em;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px #F8F5CD solid;
+    border-radius: 10px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #F8F5CD;
+    margin-left: 5px;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+  .footer__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .footer__nav a {
+    color: #000;
+    font-size: 0.9rem;
+  }
+  .footer__nav a:hover {
+    color: #F57506;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 2%;
+    font-size: 0.9rem;
   }
 }
 
@@ -657,6 +823,74 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   .question__text h4 {
     font-size: 1.2rem;
   }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  .bottom img {
+    opacity: 0.5;
+    display: block;
+  }
+  .bottom p {
+    position: absolute;
+    color: #F57506;
+    font-size: 2rem;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    font-family: 'Philosopher', serif;
+    font-weight: bold;
+  }
+  .bottom__btn {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    padding: 0.2em;
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px #F8F5CD solid;
+    border-radius: 10px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #F8F5CD;
+    margin-left: 5px;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+  .footer__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .footer__nav a {
+    color: #000;
+    font-size: 1rem;
+  }
+  .footer__nav a:hover {
+    color: #F57506;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 2%;
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 960px) {
@@ -708,6 +942,25 @@ Stylesheet: 960px以上のモニタで適用
   }
   .home-content {
     display: block;
+  }
+  .nav__btn {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    padding: 0.4em;
+    color: black;
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px #F8F5CD solid;
+    border-radius: 3px;
+    margin: 2%;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #F8F5CD;
+    font-size: 1rem;
   }
 }
 
@@ -927,6 +1180,64 @@ Stylesheet: 960px以上のモニタで適用
     -webkit-transform: translateY(2px);
             transform: translateY(2px);
   }
+  #bottom {
+    background: url("/assets/bottom-img1.jpeg") 0 0 no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top center;
+  }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  .bottom img {
+    opacity: 0.5;
+    display: block;
+  }
+  .bottom p {
+    position: absolute;
+    color: #F57506;
+    font-size: 2.3rem;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    font-family: 'Philosopher', serif;
+    font-weight: bold;
+  }
+  .bottom__btn {
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    padding: 0.2em;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px #F8F5CD solid;
+    border-radius: 10px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #F8F5CD;
+    margin-left: 5px;
+  }
+  #bottom__text p {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #F57506;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -944,6 +1255,67 @@ Stylesheet: 1280px以上のモニタで適用
   }
   .side {
     display: block;
+  }
+  .nav__btn {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    padding: 0.4em;
+    color: black;
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px #F8F5CD solid;
+    border-radius: 3px;
+    margin: 2%;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #F8F5CD;
+    font-size: 1.4rem;
+  }
+  #bottom__text p {
+    width: 60%;
+    font-size: 1.2rem;
+    color: #F57506;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+  .bottom {
+    background-color: #fff;
+    display: block;
+    position: relative;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+  .footer__logo {
+    color: #F57506;
+    margin-left: 3%;
+  }
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__box {
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 3%;
+  }
+  .footer__nav a {
+    color: #000;
+    font-size: 1.1rem;
+  }
+  .footer__nav a:hover {
+    color: #F57506;
+  }
+  .copyright p {
+    text-align: center;
+    margin: 2%;
+    font-size: 1.1rem;
   }
 }
 
