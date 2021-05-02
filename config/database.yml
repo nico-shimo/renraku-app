@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: renraku_app_production
-  username: renraku_app
-  password: <%= ENV['RENRAKU_APP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
