@@ -123,8 +123,8 @@ ul {
 }
 
 #home {
-  background-image: image-url("main-bg.png");
   min-height: 100vh;
+  position: relative;
 }
 
 .big-bg {
@@ -141,6 +141,7 @@ ul {
   font-size: 1.6rem;
   color: #F57506;
   font-weight: bold;
+  // position: absolute;
 }
 
 .page-title p {
