@@ -263,8 +263,8 @@ ul {
 }
 
 #home {
-  background-image: image-url("main-bg.png");
   min-height: 100vh;
+  position: relative;
 }
 
 .big-bg {
@@ -934,7 +934,7 @@ Stylesheet: 960px以上のモニタで適用
     margin-left: 60px;
   }
   #home {
-    background-image: url(/assets/main-bg.png);
+    background-image: image-url("main-bg.png");
     background-size: cover;
   }
   .page-title {
