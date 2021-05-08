@@ -70,10 +70,11 @@
           <div class="btn">お問い合わせフォームへ</div>
       </div>
   </section>
-  <div id="home" class="big-bg">
-      <div class="home-content">
-        <%# <%= link_to image_tag("main-bg.png"), "/" %>
-          <div class="home-set">
+  <div id="home">
+    <div class="big-bg">
+        <%= link_to image_tag("main-bg.png"), "/" %>
+    </div>
+      <div class="home-set">
               <div class="page-title">
                   <h2>毎日の連絡をもっと簡単に</h2>
                   <p>スマホで手軽に連絡しよう!</p>
@@ -94,12 +95,6 @@
                   <p>会員登録はこちら</p>
                   <div class="nav__btn">
                     <%= link_to '新規会員登録', new_user_registration_path, class: "subtitle" %>
-                  </div>
-                  <div class="nav__btn">
-                    <%= link_to 'ログイン', new_user_session_path, class: "subtitle" %>
-                  </div>
-                  <div class="nav__btn">
-                    <%= link_to 'ゲストログイン', top_guest_sign_in_path, method: :post %>
                   </div>
               </div>
           </div>    
