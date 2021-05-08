@@ -263,14 +263,21 @@ ul {
 }
 
 #home {
-  min-height: 100vh;
-  position: relative;
+  min-height: auto;
 }
 
 .big-bg {
+  position: relative;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+.home-set {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .page-title {
@@ -288,13 +295,7 @@ ul {
   color: #000;
 }
 
-.home-content {
-  display: block;
-  position: relative;
-}
-
 .home-set {
-  position: absolute;
   top: 50vh;
   left: 5%;
 }
@@ -309,6 +310,28 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-left: 3%;
+}
+
+.app__nav {
+  display: none;
+  margin-top: 2%;
+}
+
+.app__nav p {
+  display: none;
+  font-size: 2rem;
+}
+
+.app-img {
+  display: none;
+  width: 20vw;
+  height: 9vh;
+  margin-left: 5px;
+}
+
+.app__img {
+  margin-left: 5px;
+  display: none;
 }
 
 .howto {
@@ -644,6 +667,32 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@media (min-width: 480px) and (min-width: 399px) {
+  .app__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2%;
+  }
+  .app__nav p {
+    font-size: 2rem;
+  }
+  .app-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    height: 9vh;
+    margin-left: 5px;
+  }
+  .app__img {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 480px) {
   .service {
     background-color: #F8F5CD;
     margin-top: 5%;
@@ -934,7 +983,6 @@ Stylesheet: 960px以上のモニタで適用
     margin-left: 60px;
   }
   #home {
-    background-image: image-url("main-bg.png");
     background-size: cover;
   }
   .page-title {

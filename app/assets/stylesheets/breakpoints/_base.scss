@@ -123,16 +123,22 @@ ul {
 }
 
 #home {
-  min-height: 100vh;
-  position: relative;
+  min-height: auto;
 }
 
 .big-bg {
+  position: relative;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
 }
 
+.home-set {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .page-title {
   font-family: 'Philosopher', serif;
 }
@@ -141,7 +147,6 @@ ul {
   font-size: 1.6rem;
   color: #F57506;
   font-weight: bold;
-  // position: absolute;
 }
 
 .page-title p {
@@ -149,13 +154,8 @@ ul {
   color: #000;
 }
 
-.home-content {
-  display: block;
-  position: relative;
-}
 
 .home-set {
-  position: absolute;
   top: 50vh;
   left: 5%;
 }
@@ -168,6 +168,26 @@ ul {
 .inquiry {
   display: flex;
   margin-left: 3%;
+}
+
+.app__nav {
+  display: none;
+  margin-top: 2%;
+}
+.app__nav p {
+  display: none;
+  font-size: 2rem;
+}
+.app-img {
+  display: none;
+  width: 20vw;
+  height: 9vh;
+  margin-left: 5px;
+}
+
+.app__img {
+  margin-left: 5px;
+  display: none;
 }
 
 // howtoセクション

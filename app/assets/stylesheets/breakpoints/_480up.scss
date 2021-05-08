@@ -7,6 +7,27 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
   height: auto;
   display: flex;
 }
+
+@media (min-width: 399px) {
+  .app__nav {
+    display: flex;
+    margin-top: 2%;
+  }
+  .app__nav p {
+    font-size: 2rem;
+  }
+  .app-img {
+    display: flex;
+    width: 20vw;
+    height: 9vh;
+    margin-left: 5px;
+  }
+  
+  .app__img {
+    margin-left: 5px;
+  }
+  
+}
 // serviceセクション
 
 
