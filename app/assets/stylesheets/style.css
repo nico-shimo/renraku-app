@@ -655,6 +655,48 @@ ul {
   font-size: 0.7rem;
 }
 
+.select-box {
+  width: 300px;
+  height: 50px;
+  padding-left: 5px;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+}
+
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
+.text-box {
+  width: 100%;
+  /*親要素いっぱい広げる*/
+  padding: 10px 15px;
+  /*ボックスを大きくする*/
+  font-size: 16px;
+  border-radius: 3px;
+  /*ボックス角の丸み*/
+  border: 2px solid #ddd;
+  /*枠線*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*横幅の解釈をpadding, borderまでとする*/
+}
+
+.text-area {
+  width: 100%;
+  /*親要素いっぱい広げる*/
+  padding: 10px 15px;
+  /*ボックスを大きくする*/
+  font-size: 16px;
+  border-radius: 3px;
+  /*ボックス角の丸み*/
+  border: 2px solid #ddd;
+  /*枠線*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
