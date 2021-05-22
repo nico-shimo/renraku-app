@@ -292,7 +292,7 @@ ul {
 
 .page-title p {
   font-size: 1.2rem;
-  color: #000;
+  color: #F57506;
 }
 
 .home-set {
@@ -1080,7 +1080,7 @@ Stylesheet: 960px以上のモニタで適用
   }
   .page-title p {
     font-size: 1.8rem;
-    color: aliceblue;
+    color: #000;
   }
   .home-content {
     display: block;
