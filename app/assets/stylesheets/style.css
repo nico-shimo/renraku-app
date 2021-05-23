@@ -292,7 +292,7 @@ ul {
 
 .page-title p {
   font-size: 1.2rem;
-  color: #000;
+  color: #F57506;
 }
 
 .home-set {
@@ -655,6 +655,96 @@ ul {
   font-size: 0.7rem;
 }
 
+.select-box {
+  width: 300px;
+  height: 50px;
+  padding-left: 5px;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+}
+
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+}
+
+.text-box {
+  width: 100%;
+  /*親要素いっぱい広げる*/
+  padding: 10px 15px;
+  /*ボックスを大きくする*/
+  font-size: 16px;
+  border-radius: 3px;
+  /*ボックス角の丸み*/
+  border: 2px solid #ddd;
+  /*枠線*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*横幅の解釈をpadding, borderまでとする*/
+}
+
+.text-area {
+  width: 100%;
+  /*親要素いっぱい広げる*/
+  padding: 10px 15px;
+  /*ボックスを大きくする*/
+  font-size: 16px;
+  border-radius: 3px;
+  /*ボックス角の丸み*/
+  border: 2px solid #ddd;
+  /*枠線*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+table {
+  width: 97%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+table th:last-child {
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #F57506;
+}
+
+table th {
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f79744), to(#f77401));
+  background: linear-gradient(#f79744, #f77401);
+  border-left: 1px solid #F57506;
+  border-top: 1px solid #F57506;
+  border-bottom: 1px solid #F57506;
+  width: 15%;
+  padding: 10px 0;
+}
+
+table td {
+  text-align: center;
+  border-left: 1px solid #F57506;
+  border-bottom: 1px solid #F57506;
+  border-top: none;
+  width: 15%;
+  padding: 10px 0;
+}
+
+table td:last-child {
+  border-right: 1px solid #F57506;
+}
+
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -990,7 +1080,7 @@ Stylesheet: 960px以上のモニタで適用
   }
   .page-title p {
     font-size: 1.8rem;
-    color: aliceblue;
+    color: #000;
   }
   .home-content {
     display: block;
