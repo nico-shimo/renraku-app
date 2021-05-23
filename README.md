@@ -4,7 +4,7 @@
 ### URL
 IPアドレス :54.227.146.87
 
-https://user-images.githubusercontent.com/73922688/118771298-59366980-b8bd-11eb-8792-628c8f1ac1aa.png
+![top](https://user-images.githubusercontent.com/73922688/118771298-59366980-b8bd-11eb-8792-628c8f1ac1aa.png)
 
 ## なぜ作成したか
 現在保育所は全国に約4万件に登るとのデータがあります。[参考資料](http://www.garbagenews.net/archives/2092001.html) <br>しかし、連絡帳のアプリ化はまだまだ浸透しておらず、私も毎日連絡帳を2冊書いている現状です。<br>スマホでさっと連絡したいと考えている保護者の方は多いのではと考えて、<br>このアプリを開発することにしました。<br><br>
