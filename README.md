@@ -17,11 +17,10 @@ IPアドレス :54.227.146.87
 
 ### 出欠フォーム送信機能（保護者）
 アクティブハッシュ により簡単に出欠フォームを送信できます。
-https://i.gyazo.com/8a7ead78dfb7f7629f8ad06aee9f2b77.gif
-
+![8a7ead78dfb7f7629f8ad06aee9f2b77](https://user-images.githubusercontent.com/73922688/119276931-c3e9fb00-bc57-11eb-8418-ff53460955ea.gif)
 ### お知らせ一覧確認機能
 保育者の送信したお知らせを確認することができます。
-https://i.gyazo.com/fb844960f63314c40abe24919a3934d8.gif
+![fb844960f63314c40abe24919a3934d8](https://user-images.githubusercontent.com/73922688/119277045-5ab6b780-bc58-11eb-9101-e048679f8b64.gif)
 
 ### その他の機能
 - レスポンシブデザイン対応
