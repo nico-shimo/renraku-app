@@ -15,8 +15,11 @@
 
           <div class="box-email">
             <%= f.label :image, "画像" %><br />
-            <%= f.file_field :image %>
-          </div><br>
+            <%= f.file_field :image, id:"print-image"%>
+          </div>
+          <div class="right-img-upload">
+          <div id="image"></div>
+          </div>
 
           <div class="box-login">
             <%= f.submit "投稿する" %>
