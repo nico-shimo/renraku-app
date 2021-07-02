@@ -504,9 +504,9 @@ select {
 
 // お知らせフォーム
 .box {
-  width: 350px;
+  width: 400px;
   height: auto;
-  margin: 60px auto 0;
+  margin: 60px auto 60px;
   border-radius: 4px;
   border: 1px #ddd solid;
 }
@@ -574,12 +574,17 @@ table td{
 
 table td:last-child{
   border-right: 1px solid #F57506;
-}
 
+}
 table tr:last-child td:first-child {
   border-radius: 0 0 0 5px;
 }
 
 table tr:last-child td:last-child {
   border-radius: 0 0 5px 0;
+}
+
+// メッセージページ
+.select {
+
 }

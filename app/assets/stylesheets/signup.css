@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 .box {
-  width: 350px;
+  width: 500px;
   height: 500px;
   margin: 60px auto 0;
   border-radius: 4px;
@@ -44,7 +44,7 @@ h1 {
   padding-bottom: 2px;
 }
 
-.box-email input[type="email"], .box-password input[type="password"] {
+.box-email input[type="email"], input[type="text"], input[type="password"] {
   border-style: none;
   box-sizing: border-box;
   width: 100%;
