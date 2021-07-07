@@ -161,6 +161,7 @@ ul {
 }
 
 .home-btn {
+  display: none;
   margin-left: 10%;
   margin-top: 2%;
 }
@@ -225,6 +226,7 @@ ul {
     font-size: 1.4em;
     color: #F57506;
     font-weight: lighter;
+    padding-top: 3%;
     margin: 5%;
   }
 
@@ -243,6 +245,7 @@ ul {
   &__text {
     margin: 7%;
     font-size: 1rem;
+    padding-bottom: 7%;
   }
 }
 .icon-set {
